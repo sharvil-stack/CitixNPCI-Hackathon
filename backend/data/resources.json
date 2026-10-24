@@ -1,0 +1,51 @@
+[
+  {
+    "id": "rbi-credit-cards",
+    "title": {"en":"RBI: Credit-card rules and consumer rights", "hi":"RBI: क्रेडिट कार्ड के नियम और ग्राहक अधिकार", "mr":"RBI: क्रेडिट कार्डचे नियम आणि ग्राहकांचे अधिकार"},
+    "description": {"en":"Official regulatory directions, including billing, interest disclosures and minimum-due warnings.", "hi":"बिल, ब्याज की जानकारी और न्यूनतम भुगतान की चेतावनियों सहित आधिकारिक नियम।", "mr":"बिल, व्याजाची माहिती आणि किमान देय रकमेबद्दलच्या सूचनांसह अधिकृत नियम."},
+    "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12300",
+    "tag": "official"
+  },
+  {
+    "id": "npci-rupay-upi",
+    "title": {"en":"NPCI: RuPay credit card on UPI", "hi":"NPCI: UPI पर RuPay क्रेडिट कार्ड", "mr":"NPCI: UPI वर RuPay क्रेडिट कार्ड"},
+    "description": {"en":"How supported RuPay cards can be linked to UPI, and which transaction types are not permitted.", "hi":"समर्थित RuPay कार्ड UPI से कैसे जुड़ते हैं और कौन-से लेन-देन स्वीकार नहीं हैं।", "mr":"समर्थित RuPay कार्ड UPI शी कसे जोडायचे आणि कोणते व्यवहार परवानगीचे नाहीत."},
+    "url": "https://www.npci.org.in/product/rupay/credit-card-on-upi",
+    "tag": "official"
+  },
+  {
+    "id": "ncfe-elearning",
+    "title": {"en":"NCFE: Free financial education courses", "hi":"NCFE: मुफ़्त वित्तीय शिक्षा पाठ्यक्रम", "mr":"NCFE: मोफत आर्थिक साक्षरता अभ्यासक्रम"},
+    "description": {"en":"Financial education on banking, money management, scams, insurance and more. Registration may be required.", "hi":"बैंकिंग, पैसों के प्रबंधन, धोखाधड़ी, बीमा और अन्य विषयों पर शिक्षा। पंजीकरण ज़रूरी हो सकता है।", "mr":"बँकिंग, पैशांचे व्यवस्थापन, फसवणूक, विमा आणि इतर विषयांचे शिक्षण. नोंदणी आवश्यक असू शकते."},
+    "url": "https://ncfe.org.in/e-lms/",
+    "tag": "education"
+  },
+  {
+    "id": "ncfe-library",
+    "title": {"en":"NCFE: Financial education library", "hi":"NCFE: वित्तीय शिक्षा लाइब्रेरी", "mr":"NCFE: आर्थिक शिक्षण ग्रंथालय"},
+    "description": {"en":"Downloadable public financial-literacy materials and safety resources.", "hi":"वित्तीय साक्षरता और सुरक्षा से जुड़ी सामग्री।", "mr":"आर्थिक साक्षरता आणि सुरक्षिततेसंबंधी डाउनलोड करण्यायोग्य साहित्य."},
+    "url": "https://ncfe.org.in/e-library/",
+    "tag": "education"
+  },
+  {
+    "id": "cibil-credit-learning",
+    "title": {"en":"TransUnion CIBIL: Credit score and first-time credit learning", "hi":"TransUnion CIBIL: क्रेडिट स्कोर और पहली बार क्रेडिट की जानकारी", "mr":"TransUnion CIBIL: क्रेडिट स्कोअर आणि पहिल्यांदा क्रेडिटची माहिती"},
+    "description": {"en":"Learn how credit history, repayments, utilisation and enquiries relate to credit reports and lending decisions.", "hi":"जानें कि क्रेडिट इतिहास, भुगतान, उपयोग और पूछताछ क्रेडिट रिपोर्ट से कैसे जुड़ते हैं।", "mr":"क्रेडिट इतिहास, परतफेड, वापर आणि चौकशी यांचा क्रेडिट अहवालाशी कसा संबंध आहे ते जाणून घ्या."},
+    "url": "https://www.cibil.com/faq/credit-score-and-loan-basics",
+    "tag": "education"
+  },
+  {
+    "id": "zerodha-varsity",
+    "title": {"en":"Zerodha Varsity: Personal finance learning", "hi":"Zerodha Varsity: व्यक्तिगत वित्त की जानकारी", "mr":"Zerodha Varsity: वैयक्तिक वित्त शिक्षण"},
+    "description": {"en":"Useful general personal-finance education. It is not an issuer's official credit-card terms page and focuses substantially on investing topics.", "hi":"सामान्य व्यक्तिगत वित्त सीखने के लिए उपयोगी। यह बैंक की आधिकारिक क्रेडिट-कार्ड शर्तों का विकल्प नहीं है और इसमें निवेश के विषय भी हैं।", "mr":"वैयक्तिक वित्त शिकण्यासाठी उपयुक्त. हे बँकेच्या अधिकृत क्रेडिट कार्ड अटींचा पर्याय नाही; यात गुंतवणुकीचे विषयही आहेत."},
+    "url": "https://zerodha.com/varsity/category/personal-finance/",
+    "tag": "education"
+  },
+  {
+    "id": "cibil-home",
+    "title": {"en":"CIBIL: Official credit education hub", "hi":"CIBIL: आधिकारिक क्रेडिट शिक्षा", "mr":"CIBIL: अधिकृत क्रेडिट शिक्षण"},
+    "description": {"en":"First-time credit articles, credit myths and credit-health guidance from a credit information company.", "hi":"पहली बार क्रेडिट, क्रेडिट से जुड़ी गलत धारणाओं और क्रेडिट स्वास्थ्य पर लेख।", "mr":"पहिल्यांदा क्रेडिट, क्रेडिटविषयी गैरसमज आणि क्रेडिट आरोग्याबद्दलचे लेख."},
+    "url": "https://www.cibil.com/",
+    "tag": "education"
+  }
+]

@@ -1,0 +1,1295 @@
+[
+  {
+    "id": "idfc-first-wow",
+    "name": "IDFC FIRST WOW!",
+    "issuer": "IDFC FIRST Bank",
+    "category": "fd_backed",
+    "card_network": "Visa",
+    "annual_fee": 0,
+    "fee_waiver_spend": 0,
+    "minimum_fd": 20000,
+    "fd_backed": true,
+    "goal_tags": [
+      "build_history",
+      "no_history",
+      "no_income",
+      "fd_backed",
+      "low_fees",
+      "travel"
+    ],
+    "benefits": {
+      "en": [
+        "FD-backed option marketed for people without income proof or prior credit history; issuer approval still applies.",
+        "Issuer page lists ₹0 joining and annual fees for the standard FIRST WOW! card.",
+        "Credit limit is linked to the FD; current page lists 100% of eligible FD value.",
+        "Zero forex markup is listed for eligible international transactions."
+      ],
+      "hi": [
+        "FD-backed विकल्प, जिसे बैंक आय के प्रमाण या पुराने क्रेडिट इतिहास के बिना आवेदन करने वालों के लिए बताता है; अंतिम मंज़ूरी बैंक की है।",
+        "बैंक के पेज पर सामान्य FIRST WOW! कार्ड का जॉइनिंग और वार्षिक शुल्क ₹0 बताया गया है।",
+        "क्रेडिट लिमिट FD से जुड़ी है; वर्तमान पेज पात्र FD की 100% राशि बताता है।",
+        "योग्य अंतरराष्ट्रीय लेन-देन पर zero forex markup बताया गया है।"
+      ],
+      "mr": [
+        "उत्पन्नाचा पुरावा किंवा जुना क्रेडिट इतिहास नसलेल्या लोकांसाठी बँक हा FD-backed पर्याय सांगते; अंतिम मंजुरी बँकेची असते.",
+        "बँकेच्या पानावर सामान्य FIRST WOW! कार्डचे जॉइनिंग व वार्षिक शुल्क ₹0 दाखवले आहे.",
+        "क्रेडिट मर्यादा FD शी जोडलेली आहे; सध्याच्या पानावर पात्र FD च्या 100% रकमेइतकी मर्यादा नमूद आहे.",
+        "पात्र आंतरराष्ट्रीय व्यवहारांवर zero forex markup नमूद आहे."
+      ]
+    },
+    "risks": {
+      "en": [
+        "Current listed minimum FD for Indian residents is ₹20,000.",
+        "The bank places a lien on the FD; do not lock away emergency savings.",
+        "Reward exclusions apply and cash advances carry a fee; avoid cash withdrawals on credit where possible.",
+        "The issuer retains the final approval decision; reconfirm all terms."
+      ],
+      "hi": [
+        "भारत के निवासियों के लिए सूचीबद्ध न्यूनतम FD ₹20,000 है।",
+        "बैंक FD पर lien लगाता है; आपातकालीन बचत को इसमें न बाँधें।",
+        "रिवॉर्ड पर exclusions हैं और cash advance पर शुल्क लगता है; संभव हो तो क्रेडिट कार्ड से नकद निकालने से बचें।",
+        "अंतिम मंज़ूरी बैंक तय करता है; सभी शर्तें दोबारा जाँचें।"
+      ],
+      "mr": [
+        "भारतीय रहिवाशांसाठी सध्या नमूद किमान FD ₹20,000 आहे.",
+        "बँक FD वर lien ठेवते; आपत्कालीन बचत त्यात अडकवू नका.",
+        "रिवॉर्डला exclusions आहेत आणि cash advance शुल्क लागू शकते; शक्यतो क्रेडिट कार्डवरून रोख काढू नका.",
+        "अंतिम मंजुरी बँक ठरवते; सर्व अटी पुन्हा तपासा."
+      ]
+    },
+    "eligibility": {
+      "en": "Issuer currently lists Indian citizenship, permanent Indian address, age 18–80 and an eligible FD of at least ₹20,000 for Indian residents; approval remains the bank’s decision.",
+      "hi": "बैंक की मौजूदा जानकारी में भारतीय नागरिकता, भारत में स्थायी पता, 18–80 वर्ष की उम्र और कम-से-कम ₹20,000 की पात्र FD बताई गई है; मंज़ूरी बैंक का निर्णय है।",
+      "mr": "बँकेच्या सध्याच्या माहितीनुसार भारतीय नागरिकत्व, भारतातील कायमचा पत्ता, 18–80 वय आणि किमान ₹20,000 ची पात्र FD आवश्यक आहे; अंतिम मंजुरी बँकेची असते."
+    },
+    "source_url": "https://www.idfcfirst.bank.in/credit-card/wow",
+    "fees_url": "https://www.idfcfirst.bank.in/credit-card/wow",
+    "verified_on": "2026-10-21",
+    "data_status": "official_source_checked_reverify_before_apply",
+    "note": "Checked against issuer page on 2026-10-21; confirm current terms before applying."
+  },
+  {
+    "id": "sbi-cashback",
+    "name": "CASHBACK SBI Card",
+    "issuer": "SBI Card",
+    "category": "cashback",
+    "card_network": "Check variant with issuer",
+    "annual_fee": 999,
+    "fee_waiver_spend": 200000,
+    "fd_backed": false,
+    "goal_tags": [
+      "cashback",
+      "online_shopping",
+      "everyday_spends"
+    ],
+    "benefits": {
+      "en": [
+        "Issuer lists 5% cashback on eligible online spends and 1% on eligible offline spends.",
+        "Cashback is credited to the card account according to programme terms.",
+        "Annual fee waiver is listed at ₹2 lakh eligible annual spend."
+      ],
+      "hi": [
+        "बैंक पात्र ऑनलाइन खर्च पर 5% और पात्र ऑफलाइन खर्च पर 1% cashback बताता है।",
+        "कार्यक्रम की शर्तों के अनुसार cashback कार्ड खाते में जमा होता है।",
+        "₹2 लाख के पात्र सालाना खर्च पर वार्षिक शुल्क माफ होने की शर्त सूचीबद्ध है।"
+      ],
+      "mr": [
+        "बँक पात्र ऑनलाइन खर्चावर 5% आणि पात्र ऑफलाइन खर्चावर 1% cashback सांगते.",
+        "कार्यक्रमाच्या अटींनुसार cashback कार्ड खात्यात जमा होतो.",
+        "₹2 लाख पात्र वार्षिक खर्चावर वार्षिक शुल्क माफ होण्याची अट नमूद आहे."
+      ]
+    },
+    "risks": {
+      "en": [
+        "Listed annual fee is ₹999 plus taxes unless the waiver conditions are met.",
+        "Official FAQ lists caps of ₹2,000 online and ₹2,000 offline per statement cycle (aggregate cap ₹4,000); exclusions apply.",
+        "Not designed specifically for an FD-backed first-card route or travel/lounges.",
+        "Check current eligibility, terms and eligible-spend definitions."
+      ],
+      "hi": [
+        "छूट की शर्तें पूरी न हों तो वार्षिक शुल्क ₹999 और लागू टैक्स है।",
+        "आधिकारिक FAQ में प्रति स्टेटमेंट साइकिल ऑनलाइन ₹2,000 और ऑफलाइन ₹2,000 (कुल ₹4,000) की सीमा है; कुछ खर्चों पर cashback नहीं मिलता।",
+        "यह विशेष रूप से FD-backed शुरुआत या ट्रैवल/लाउंज के लिए नहीं बना है।",
+        "वर्तमान पात्रता, शर्तें और eligible spend की परिभाषा जाँचें।"
+      ],
+      "mr": [
+        "माफीची अट पूर्ण न झाल्यास वार्षिक शुल्क ₹999 आणि लागू कर आहे.",
+        "अधिकृत FAQ नुसार प्रत्येक स्टेटमेंट सायकलमध्ये ऑनलाइन ₹2,000 आणि ऑफलाइन ₹2,000 (एकूण ₹4,000) मर्यादा आहे; काही खर्चांवर cashback मिळत नाही.",
+        "FD-backed पहिल्या कार्डासाठी किंवा प्रवास/लाउंजसाठी हा विशेष तयार केलेला पर्याय नाही.",
+        "सध्याची पात्रता, अटी आणि पात्र खर्चाची व्याख्या तपासा."
+      ]
+    },
+    "eligibility": {
+      "en": "Eligibility varies by issuer policy and applicant. Income, age, credit history and location may be considered; check the issuer’s current criteria.",
+      "hi": "पात्रता बैंक की नीति और आवेदक पर निर्भर है। आय, उम्र, क्रेडिट इतिहास और स्थान देखे जा सकते हैं; वर्तमान नियम देखें।",
+      "mr": "पात्रता बँकेच्या धोरणावर आणि अर्जदारावर अवलंबून असते. उत्पन्न, वय, क्रेडिट इतिहास आणि ठिकाण पाहिले जाऊ शकते; सध्याचे निकष तपासा."
+    },
+    "source_url": "https://www.sbicard.com/en/personal/credit-cards.html",
+    "fees_url": "https://www.sbicard.com/en/most-important-terms-and-conditions.page",
+    "verified_on": "2026-10-21",
+    "data_status": "official_source_checked_reverify_before_apply",
+    "note": "Current headline benefits checked on official SBI Card pages; verify cardholder terms and exclusions before applying."
+  },
+  {
+    "id": "sbi-simplyclick",
+    "name": "SimplyCLICK SBI Card",
+    "issuer": "SBI Card",
+    "category": "online_shopping",
+    "card_network": "Check variant with issuer",
+    "annual_fee": 499,
+    "fee_waiver_spend": 100000,
+    "fd_backed": false,
+    "goal_tags": [
+      "online_shopping",
+      "fuel_savings",
+      "rewards"
+    ],
+    "benefits": {
+      "en": [
+        "Issuer lists accelerated reward points on eligible online spends and partner purchases.",
+        "Milestone e-vouchers are listed for eligible annual online spends of ₹1 lakh and ₹2 lakh.",
+        "A 1% fuel surcharge waiver is listed for qualifying transactions within specified limits."
+      ],
+      "hi": [
+        "बैंक पात्र ऑनलाइन खर्च और पार्टनर खरीदारी पर अतिरिक्त reward points बताता है।",
+        "₹1 लाख और ₹2 लाख के पात्र सालाना ऑनलाइन खर्च पर milestone e-vouchers सूचीबद्ध हैं।",
+        "निर्धारित सीमा वाले योग्य लेन-देन पर 1% fuel surcharge waiver बताया गया है।"
+      ],
+      "mr": [
+        "बँक पात्र ऑनलाइन खर्च व भागीदारांकडील खरेदीवर अतिरिक्त reward points सांगते.",
+        "₹1 लाख व ₹2 लाख पात्र वार्षिक ऑनलाइन खर्चावर milestone e-vouchers नमूद आहेत.",
+        "निर्धारित मर्यादेतील पात्र व्यवहारांवर 1% fuel surcharge waiver दिले आहे."
+      ]
+    },
+    "risks": {
+      "en": [
+        "Listed annual fee is ₹499 plus taxes unless the fee-waiver conditions are met.",
+        "Points are not the same as cash; issuer lists 4 points = ₹1 for standard redemption, but exact value and terms matter.",
+        "Partner boosts, vouchers, transaction conditions and exclusions are subject to detailed terms.",
+        "Could be a poor fit if you rarely spend online or need a secured entry route."
+      ],
+      "hi": [
+        "छूट की शर्तें पूरी न हों तो वार्षिक शुल्क ₹499 और लागू टैक्स है।",
+        "Points नकद के बराबर नहीं हैं; बैंक सामान्य redemption के लिए 4 points = ₹1 बताता है, लेकिन सटीक मूल्य और शर्तें देखें।",
+        "पार्टनर लाभ, vouchers, लेन-देन की शर्तें और exclusions लागू हैं।",
+        "अगर ऑनलाइन खर्च कम है या FD-backed शुरुआत चाहिए, तो यह कम उपयुक्त हो सकता है।"
+      ],
+      "mr": [
+        "माफीची अट पूर्ण न झाल्यास वार्षिक शुल्क ₹499 आणि लागू कर आहे.",
+        "Points म्हणजे रोख रक्कम नाही; बँक सामान्य redemption साठी 4 points = ₹1 सांगते, तरी सविस्तर अटी तपासा.",
+        "भागीदार लाभ, vouchers, व्यवहारांच्या अटी आणि exclusions लागू आहेत.",
+        "ऑनलाइन खर्च कमी असेल किंवा FD-backed सुरुवात हवी असेल तर हा कमी योग्य ठरू शकतो."
+      ]
+    },
+    "eligibility": {
+      "en": "Eligibility and income, age, location and credit-history checks vary by issuer policy. This app cannot determine approval.",
+      "hi": "पात्रता और आय, उम्र, स्थान व क्रेडिट इतिहास की जाँच बैंक की नीति पर निर्भर है। यह ऐप मंज़ूरी नहीं बता सकता।",
+      "mr": "पात्रता आणि उत्पन्न, वय, ठिकाण व क्रेडिट इतिहासाच्या अटी बँकेच्या धोरणावर अवलंबून असतात. हे ॲप मंजुरी ठरवू शकत नाही."
+    },
+    "source_url": "https://www.sbicard.com/en/personal/credit-cards/simplyclick-sbi-card.html",
+    "fees_url": "https://www.sbicard.com/en/most-important-terms-and-conditions.page",
+    "verified_on": "2026-10-21",
+    "data_status": "official_source_checked_reverify_before_apply",
+    "note": "Official product page checked 2026-10-21; verify the current MITC and exclusions."
+  },
+  {
+    "id": "icici-platinum-chip",
+    "name": "ICICI Bank Platinum Chip",
+    "issuer": "ICICI Bank",
+    "category": "low_fees",
+    "card_network": "Check variant with issuer",
+    "annual_fee": 0,
+    "fee_waiver_spend": 0,
+    "fd_backed": false,
+    "goal_tags": [
+      "low_fees",
+      "everyday_spends",
+      "fuel_savings"
+    ],
+    "benefits": {
+      "en": [
+        "The issuer page describes no joining and no annual fee.",
+        "Reward points and a fuel surcharge waiver are listed, subject to terms."
+      ],
+      "hi": [
+        "बैंक के उत्पाद पेज पर जॉइनिंग और वार्षिक शुल्क नहीं बताया गया है।",
+        "शर्तों के अनुसार reward points और fuel surcharge waiver सूचीबद्ध हैं।"
+      ],
+      "mr": [
+        "बँकेच्या उत्पादन पानावर जॉइनिंग आणि वार्षिक शुल्क नसल्याचे नमूद आहे.",
+        "अटींनुसार reward points आणि fuel surcharge waiver दिले आहेत."
+      ]
+    },
+    "risks": {
+      "en": [
+        "The source page available for this demo is older; reconfirm this product is still offered and verify every current term.",
+        "Reward-point redemption value may be limited; do not assume points equal cash.",
+        "Issuer eligibility and approval checks still apply."
+      ],
+      "hi": [
+        "इस डेमो में उपलब्ध आधिकारिक पेज पुराना है; कार्ड अभी उपलब्ध है या नहीं और सभी मौजूदा शर्तें दोबारा जाँचें।",
+        "Reward points का redemption value सीमित हो सकता है; points को नकद न मानें।",
+        "बैंक की पात्रता और मंज़ूरी की शर्तें लागू हैं।"
+      ],
+      "mr": [
+        "या डेमोसाठी उपलब्ध अधिकृत पान जुने आहे; कार्ड अजून उपलब्ध आहे का आणि सध्याच्या सर्व अटी तपासा.",
+        "Reward points ची redemption value मर्यादित असू शकते; points म्हणजे रोख रक्कम असे समजू नका.",
+        "बँकेच्या पात्रता आणि मंजुरीच्या अटी लागू आहेत."
+      ]
+    },
+    "eligibility": {
+      "en": "Check the current issuer eligibility page; the source available for this demo is older and should not be relied on as current criteria.",
+      "hi": "बैंक की वर्तमान पात्रता साइट देखें; इस डेमो का स्रोत पुराना है, इसलिए इसे वर्तमान नियम न मानें।",
+      "mr": "बँकेचे सध्याचे पात्रता पान तपासा; या डेमोसाठी वापरलेला स्रोत जुना आहे, त्यामुळे तो सध्याचा निकष समजू नका."
+    },
+    "source_url": "https://www.icicibank.com/personal-banking/cards/credit-card/platinum-chip-credit-card.html",
+    "fees_url": "https://www.icicibank.com/personal-banking/cards/credit-card/platinum-chip-credit-card.html",
+    "verified_on": null,
+    "data_status": "official_page_requires_reverification",
+    "note": "Source page available was older; reconfirm availability, fees and terms with ICICI Bank."
+  },
+  {
+    "id": "amazon-pay-icici",
+    "name": "Amazon Pay ICICI Bank Credit Card",
+    "issuer": "ICICI Bank / Amazon Pay",
+    "category": "cashback",
+    "card_network": "Check exact variant with issuer",
+    "annual_fee": 0,
+    "fee_waiver_spend": 0,
+    "fd_backed": false,
+    "goal_tags": [
+      "cashback",
+      "online_shopping",
+      "low_fees",
+      "everyday_spends"
+    ],
+    "benefits": {
+      "en": [
+        "Issuer FAQ lists no joining or annual fee.",
+        "Eligible Amazon India purchases are listed at 5% for Prime members and 3% for non-Prime members; some items have different rates.",
+        "Eligible Amazon Pay partner purchases and other eligible spends have separate cashback rates. Cashback is credited as Amazon Pay balance."
+      ],
+      "hi": [
+        "बैंक की FAQ में जॉइनिंग और वार्षिक फीस ₹0 बताई गई है।",
+        "पात्र Amazon India खरीदारी पर Prime सदस्यों के लिए 5% और non-Prime के लिए 3% cashback सूचीबद्ध है; कुछ वस्तुओं पर अलग दरें हैं।",
+        "Amazon Pay पार्टनर और अन्य पात्र खर्चों की अलग दरें हैं। Cashback Amazon Pay balance में आता है।"
+      ],
+      "mr": [
+        "बँकेच्या FAQ नुसार जॉइनिंग आणि वार्षिक शुल्क ₹0 आहे.",
+        "पात्र Amazon India खरेदीवर Prime सदस्यांसाठी 5% आणि non-Prime साठी 3% cashback नमूद आहे; काही वस्तूंवर वेगळे दर आहेत.",
+        "Amazon Pay भागीदार आणि इतर पात्र खर्चांसाठी वेगळे दर आहेत. Cashback Amazon Pay balance म्हणून जमा होतो."
+      ]
+    },
+    "risks": {
+      "en": [
+        "Designed around Amazon/Amazon Pay use; rewards may be much lower if you rarely use that ecosystem.",
+        "Eligibility may be invitation/offer based and is not guaranteed.",
+        "Gift cards, fuel, EMI and some other categories are excluded or use different rates; review the detailed terms."
+      ],
+      "hi": [
+        "यह Amazon/Amazon Pay इस्तेमाल पर केंद्रित है; इस ecosystem का कम उपयोग करने पर लाभ भी कम हो सकता है।",
+        "पात्रता invitation/offer पर निर्भर हो सकती है; मंज़ूरी की गारंटी नहीं है।",
+        "Gift cards, fuel, EMI और कुछ अन्य खर्चों पर cashback नहीं मिलता या अलग दर लागू होती है; नियम पढ़ें।"
+      ],
+      "mr": [
+        "हे Amazon/Amazon Pay वापरावर केंद्रित आहे; त्या सेवांचा कमी वापर असल्यास फायदा कमी होऊ शकतो.",
+        "पात्रता invitation/offer वर अवलंबून असू शकते; मंजुरीची हमी नाही.",
+        "Gift card, fuel, EMI आणि काही खर्चांवर cashback मिळत नाही किंवा वेगळा दर असतो; अटी वाचा."
+      ]
+    },
+    "eligibility": {
+      "en": "Issuer application/offer eligibility applies; invitation-based availability may apply. The app cannot confirm approval.",
+      "hi": "बैंक की आवेदन/ऑफर पात्रता लागू है; आवेदन invitation के आधार पर उपलब्ध हो सकता है। ऐप मंज़ूरी की पुष्टि नहीं कर सकता।",
+      "mr": "बँकेची अर्ज/ऑफर पात्रता लागू होते; अर्ज invitation वर अवलंबून असू शकतो. ॲप मंजुरीची पुष्टी करू शकत नाही."
+    },
+    "source_url": "https://www.icicibank.com/personal-banking/cards/credit-card/amazon-pay-credit-card.html",
+    "fees_url": "https://www.icicibank.com/personal-banking/cards/credit-card/amazon-pay-credit-card/amazon-pay-faq",
+    "verified_on": "2026-10-21",
+    "data_status": "official_source_checked_reverify_before_apply",
+    "note": "Official ICICI Bank FAQ reviewed on 21 October 2026; Amazon Pay rates and excluded categories are conditional and must be rechecked."
+  },
+  {
+    "id": "indusind-platinum-rupay",
+    "name": "IndusInd Bank Platinum RuPay Credit Card",
+    "issuer": "IndusInd Bank",
+    "category": "upi",
+    "card_network": "Check exact variant with issuer",
+    "annual_fee": 0,
+    "fee_waiver_spend": 0,
+    "fd_backed": false,
+    "goal_tags": [
+      "upi_payments",
+      "low_fees",
+      "everyday_spends",
+      "fuel_savings"
+    ],
+    "benefits": {
+      "en": [
+        "Issuer page lists no joining or annual fee.",
+        "RuPay credit-card-on-UPI is supported for eligible merchant payments in supported UPI apps.",
+        "Issuer lists 2 reward points per ₹100 on UPI transactions and 1 point per ₹100 on non-UPI transactions, subject to terms.",
+        "A fuel-surcharge waiver is listed for qualifying transactions."
+      ],
+      "hi": [
+        "बैंक के पेज पर जॉइनिंग और वार्षिक फीस नहीं बताई गई है।",
+        "समर्थित UPI ऐप में पात्र दुकानदार भुगतान के लिए RuPay क्रेडिट कार्ड जोड़ा जा सकता है।",
+        "बैंक UPI खर्च पर ₹100 के लिए 2 reward points और non-UPI पर ₹100 के लिए 1 point बताता है; शर्तें लागू हैं।",
+        "योग्य लेन-देन पर fuel surcharge waiver सूचीबद्ध है।"
+      ],
+      "mr": [
+        "बँकेच्या पानावर जॉइनिंग आणि वार्षिक शुल्क नाही असे नमूद आहे.",
+        "समर्थित UPI ॲपमध्ये पात्र व्यापारी पेमेंटसाठी RuPay क्रेडिट कार्ड जोडता येते.",
+        "बँक UPI व्यवहारांवर ₹100 मागे 2 reward points आणि non-UPI वर 1 point नमूद करते; अटी लागू आहेत.",
+        "पात्र व्यवहारांवर fuel surcharge waiver नमूद आहे."
+      ]
+    },
+    "risks": {
+      "en": [
+        "Reward points are not cash; redemption value and cash-redemption caps can change.",
+        "Only eligible RuPay cards, supported apps and permitted merchant transactions work on UPI; do not assume P2P transfers or every QR will work.",
+        "Foreign-currency markup and reward exclusions apply; review the current fee schedule."
+      ],
+      "hi": [
+        "Reward points नकद नहीं हैं; redemption value और cash-redemption limits बदल सकती हैं।",
+        "UPI पर केवल पात्र RuPay कार्ड, समर्थित ऐप और अनुमति वाले दुकानदार लेन-देन काम करते हैं; हर QR या व्यक्ति को पैसे भेजना संभव न मानें।",
+        "विदेशी मुद्रा शुल्क और reward exclusions लागू हैं; वर्तमान फीस सूची देखें।"
+      ],
+      "mr": [
+        "Reward points म्हणजे रोख पैसे नाहीत; redemption value आणि cash-redemption मर्यादा बदलू शकतात.",
+        "UPI वर पात्र RuPay कार्ड, समर्थित ॲप आणि परवानगीचे व्यापारी व्यवहारच चालतात; प्रत्येक QR किंवा व्यक्तीला पैसे पाठवता येतील असे समजू नका.",
+        "परकीय चलन शुल्क आणि reward exclusions लागू आहेत; सध्याची शुल्क यादी तपासा."
+      ]
+    },
+    "eligibility": {
+      "en": "Issuer eligibility, verification and approval rules apply. Check the current card application page.",
+      "hi": "बैंक की पात्रता, सत्यापन और मंज़ूरी के नियम लागू हैं। वर्तमान कार्ड आवेदन पेज देखें।",
+      "mr": "बँकेचे पात्रता, पडताळणी आणि मंजुरीचे नियम लागू आहेत. सध्याचे अर्ज पान तपासा."
+    },
+    "source_url": "https://www.indusind.com/in/en/personal/cards/credit-card/platinum-rupay-credit-card.html",
+    "fees_url": "https://www.indusind.com/in/en/personal/cards/credit-card/platinum-rupay-credit-card.html",
+    "verified_on": "2026-10-21",
+    "data_status": "official_source_checked_reverify_before_apply",
+    "note": "Official issuer page reviewed on 21 October 2026; confirm reward conversion, caps, UPI eligibility and current terms before applying."
+  },
+  {
+    "id": "sbi-simplysave",
+    "name": "SimplySAVE SBI Card",
+    "issuer": "SBI Card",
+    "category": "everyday_rewards",
+    "card_network": "Check exact variant with issuer",
+    "annual_fee": 499,
+    "fee_waiver_spend": 100000,
+    "fd_backed": false,
+    "goal_tags": [
+      "everyday_spends",
+      "fuel_savings",
+      "low_fees",
+      "rewards"
+    ],
+    "benefits": {
+      "en": [
+        "Issuer lists accelerated reward points on eligible dining, departmental-store/grocery and movie spends.",
+        "Other eligible retail spends earn base reward points; issuer lists 4 points = ₹1 for redemption, subject to terms.",
+        "A fuel-surcharge waiver is listed for qualifying transactions in a specified range."
+      ],
+      "hi": [
+        "बैंक पात्र dining, departmental store/grocery और movie खर्चों पर अतिरिक्त reward points बताता है।",
+        "अन्य पात्र retail खर्चों पर सामान्य points मिलते हैं; बैंक redemption के लिए 4 points = ₹1 बताता है, शर्तें लागू हैं।",
+        "निर्धारित सीमा के योग्य fuel transactions पर surcharge waiver सूचीबद्ध है।"
+      ],
+      "mr": [
+        "बँक पात्र dining, departmental store/grocery आणि movie खर्चांवर जास्त reward points सांगते.",
+        "इतर पात्र retail खर्चांवर बेस points मिळतात; redemption साठी 4 points = ₹1 नमूद आहे, अटी लागू आहेत.",
+        "निर्धारित मर्यादेतील पात्र fuel व्यवहारांवर surcharge waiver नमूद आहे."
+      ]
+    },
+    "risks": {
+      "en": [
+        "Annual fee is listed as ₹499 + taxes; waiver conditions apply at the specified eligible annual spend.",
+        "Points are not equivalent to cashback; redemption choices and exclusions affect their value.",
+        "The qualifying fuel transaction range and statement-cycle cap limit the waiver."
+      ],
+      "hi": [
+        "वार्षिक फीस ₹499 + टैक्स सूचीबद्ध है; पात्र सालाना खर्च की शर्त पूरी होने पर छूट लागू हो सकती है।",
+        "Points सीधे cashback नहीं हैं; redemption विकल्प और exclusions वास्तविक मूल्य बदलते हैं।",
+        "Fuel waiver के लिए लेन-देन की सीमा और statement-cycle cap लागू हैं।"
+      ],
+      "mr": [
+        "वार्षिक शुल्क ₹499 + कर नमूद आहे; पात्र वार्षिक खर्चाची अट पूर्ण झाल्यास माफी लागू होऊ शकते.",
+        "Points म्हणजे थेट cashback नाही; redemption पर्याय आणि exclusions मुळे प्रत्यक्ष मूल्य बदलते.",
+        "Fuel waiver साठी व्यवहाराची मर्यादा आणि statement-cycle cap लागू आहेत."
+      ]
+    },
+    "eligibility": {
+      "en": "Issuer eligibility criteria, age, income/credit profile and approval apply; verify the latest application requirements.",
+      "hi": "बैंक की पात्रता, उम्र, आय/क्रेडिट प्रोफ़ाइल और मंज़ूरी की शर्तें लागू हैं; नवीनतम नियम देखें।",
+      "mr": "बँकेचे पात्रता निकष, वय, उत्पन्न/क्रेडिट प्रोफाइल आणि मंजुरी लागू आहेत; सध्याच्या अटी तपासा."
+    },
+    "source_url": "https://www.sbicard.com/en/personal/credit-cards/simplysave-sbi-card.html",
+    "fees_url": "https://www.sbicard.com/en/personal/credit-cards/simplysave-sbi-card.html",
+    "verified_on": "2026-10-21",
+    "data_status": "official_source_checked_reverify_before_apply",
+    "note": "Official SBI Card page reviewed on 21 October 2026; recheck the current fee, waiver spend and reward redemption conditions."
+  },
+  {
+    "id": "airtel-axis",
+    "name": "Airtel Axis Bank Credit Card",
+    "issuer": "Axis Bank",
+    "category": "cashback",
+    "card_network": "Check exact variant with issuer",
+    "annual_fee": 500,
+    "fee_waiver_spend": null,
+    "fd_backed": false,
+    "goal_tags": [
+      "bill_payments",
+      "cashback",
+      "everyday_spends"
+    ],
+    "benefits": {
+      "en": [
+        "Cashback terms list 25% on eligible Airtel mobile/broadband/Wi-Fi/DTH payments through Airtel Thanks, with a monthly cap.",
+        "Eligible utility bills through Airtel Thanks and certain partner-app spends have separate cashback rates and caps.",
+        "Other eligible spends have a lower base cashback rate under issuer terms."
+      ],
+      "hi": [
+        "Cashback नियमों में Airtel Thanks से किए पात्र Airtel mobile/broadband/Wi-Fi/DTH भुगतान पर 25% cashback और मासिक सीमा सूचीबद्ध है।",
+        "Airtel Thanks के पात्र utility bills और कुछ partner-app खर्चों की अलग दरें और सीमाएँ हैं।",
+        "अन्य पात्र खर्चों पर बैंक की शर्तों के अनुसार कम base cashback मिलता है।"
+      ],
+      "mr": [
+        "Cashback अटींनुसार Airtel Thanks मधून केलेल्या पात्र Airtel mobile/broadband/Wi-Fi/DTH पेमेंटवर 25% cashback आणि मासिक मर्यादा आहे.",
+        "Airtel Thanks मधील पात्र utility bills आणि काही partner-app खर्चांसाठी वेगळे दर व मर्यादा आहेत.",
+        "इतर पात्र खर्चांवर बँकेच्या अटींनुसार कमी base cashback मिळते."
+      ]
+    },
+    "risks": {
+      "en": [
+        "Listed joining and annual fees are ₹500 + applicable taxes; check any current offer/waiver.",
+        "High headline percentages are capped and depend on paying through specified apps and eligible bill types.",
+        "Partner lists and exclusions can change; it may be poor value if you do not use Airtel and listed partner services."
+      ],
+      "hi": [
+        "जॉइनिंग और वार्षिक फीस ₹500 + लागू टैक्स सूचीबद्ध है; वर्तमान offer/waiver जाँचें।",
+        "ऊँची cashback दरों पर सीमा है और विशिष्ट ऐप/पात्र बिल प्रकार जरूरी हैं।",
+        "Partner सूची और exclusions बदल सकते हैं; Airtel/पार्टनर सेवाएँ नहीं इस्तेमाल करते तो लाभ कम हो सकता है।"
+      ],
+      "mr": [
+        "जॉइनिंग आणि वार्षिक शुल्क ₹500 + लागू कर नमूद आहे; सध्याची offer/waiver तपासा.",
+        "मोठ्या cashback दरांवर मर्यादा आहेत आणि ठरावीक ॲप व पात्र बिल प्रकार आवश्यक आहेत.",
+        "Partner यादी व exclusions बदलू शकतात; Airtel/भागीदार सेवा वापरत नसल्यास फायदा कमी होऊ शकतो."
+      ]
+    },
+    "eligibility": {
+      "en": "Issuer eligibility and approval apply. Check the current Axis Bank application page and fee schedule.",
+      "hi": "बैंक की पात्रता और मंज़ूरी लागू है। Axis Bank का वर्तमान आवेदन पेज और फीस सूची देखें।",
+      "mr": "बँकेचे पात्रता आणि मंजुरीचे नियम लागू आहेत. Axis Bank चे सध्याचे अर्ज पान व शुल्क यादी तपासा."
+    },
+    "source_url": "https://www.axisbank.com/retail/cards/credit-card/airtel-axis-bank-credit-card",
+    "fees_url": "https://www.axisbank.com/docs/default-source/default-document-library/credit-cards/terms-and-conditions-for-cashback-for-airtel-axis-bank-credit-card.pdf/1000",
+    "verified_on": "2026-10-21",
+    "data_status": "official_source_checked_reverify_before_apply",
+    "note": "Official Axis Bank product/terms pages reviewed on 21 October 2026; cashback caps and partner-app eligibility are essential to the real value."
+  },
+  {
+    "id": "hdfc-millennia",
+    "name": "HDFC Bank Millennia Credit Card",
+    "issuer": "HDFC Bank",
+    "category": "cashback",
+    "card_network": "Check exact variant with issuer",
+    "annual_fee": 1000,
+    "fee_waiver_spend": 100000,
+    "fd_backed": false,
+    "goal_tags": [
+      "cashback",
+      "online_shopping",
+      "everyday_spends",
+      "rewards"
+    ],
+    "benefits": {
+      "en": [
+        "Published cashback terms list 5% on eligible spends at selected online merchants and 1% on other eligible spends.",
+        "The published terms include separate cashback limits per statement cycle.",
+        "Potential fit for users whose ordinary spending naturally falls into eligible categories."
+      ],
+      "hi": [
+        "प्रकाशित cashback नियमों में चुने गए online merchants पर पात्र खर्च के लिए 5% और अन्य पात्र खर्चों पर 1% सूचीबद्ध है।",
+        "प्रकाशित नियमों में प्रति statement cycle अलग cashback सीमाएँ हैं।",
+        "उन लोगों के लिए उपयोगी हो सकता है जिनका सामान्य खर्च पात्र श्रेणियों में आता है।"
+      ],
+      "mr": [
+        "प्रकाशित cashback अटींमध्ये निवडक online merchants वरील पात्र खर्चासाठी 5% आणि इतर पात्र खर्चावर 1% नमूद आहे.",
+        "प्रकाशित अटींमध्ये प्रत्येक statement cycle साठी वेगळ्या cashback मर्यादा आहेत.",
+        "ज्यांचा नेहमीचा खर्च पात्र श्रेणींमध्ये येतो त्यांच्यासाठी उपयोगी ठरू शकते."
+      ]
+    },
+    "risks": {
+      "en": [
+        "The listed annual fee is ₹1,000 + taxes; waiver may require eligible annual spend, so verify the current threshold.",
+        "Published terms cap cashback per statement cycle and exclude some categories such as fuel, EMI, wallet, rent and government-related transactions.",
+        "Merchant eligibility, reward posting, taxes and current terms must be checked before applying."
+      ],
+      "hi": [
+        "सूचीबद्ध वार्षिक फीस ₹1,000 + टैक्स है; छूट के लिए पात्र सालाना खर्च चाहिए हो सकता है, इसलिए वर्तमान सीमा जाँचें।",
+        "प्रकाशित नियमों में प्रति statement cycle cashback cap है और fuel, EMI, wallet, rent तथा सरकारी भुगतान जैसी कुछ श्रेणियाँ बाहर हैं।",
+        "आवेदन से पहले merchant पात्रता, reward posting, टैक्स और वर्तमान शर्तें जाँचें।"
+      ],
+      "mr": [
+        "नमूद वार्षिक शुल्क ₹1,000 + कर आहे; माफीसाठी पात्र वार्षिक खर्च आवश्यक असू शकतो, त्यामुळे सध्याची मर्यादा तपासा.",
+        "प्रकाशित अटींमध्ये statement cycle नुसार cashback cap आहे आणि fuel, EMI, wallet, rent व सरकारी देयकांसारख्या काही श्रेणी वगळल्या आहेत.",
+        "अर्जापूर्वी merchant पात्रता, reward posting, कर आणि सध्याच्या अटी तपासा."
+      ]
+    },
+    "eligibility": {
+      "en": "Eligibility depends on current issuer policy and applicant profile; this app cannot predict approval.",
+      "hi": "पात्रता बैंक की वर्तमान नीति और आवेदक की प्रोफ़ाइल पर निर्भर है; यह ऐप मंज़ूरी का अनुमान नहीं लगा सकता।",
+      "mr": "पात्रता बँकेच्या सध्याच्या धोरणावर व अर्जदाराच्या प्रोफाइलवर अवलंबून असते; हे ॲप मंजुरीचा अंदाज देऊ शकत नाही."
+    },
+    "source_url": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/millennia-credit-card",
+    "fees_url": "https://www.hdfcbank.com/content/bbp/repositories/723fb80a-2dde-42a3-9793-7ae1be57c87f/?path=%2FPersonal%2FPay%2FCards%2FMillennia+Cards%2FCashBack+Credit+Card%2FTerms-and-Conditions-Millennia-Credit-Card.pdf",
+    "verified_on": "2026-10-21",
+    "data_status": "official_source_checked_reverify_before_apply",
+    "note": "Official HDFC Bank product/terms pages reviewed on 21 October 2026; fee and cashback terms should be reconfirmed against current MITC."
+  },
+  {
+    "id": "axis-ace",
+    "name": "Axis Bank ACE Credit Card",
+    "issuer": "Axis Bank",
+    "category": "cashback",
+    "card_network": "Check current variant with issuer",
+    "annual_fee": 499,
+    "fee_waiver_spend": 200000,
+    "fd_backed": false,
+    "goal_tags": [
+      "bill_payments",
+      "cashback",
+      "everyday_spends"
+    ],
+    "benefits": {
+      "en": [
+        "Official issuer terms list 5% cashback on eligible utility bills, DTH and mobile recharges only through the eligible Google Pay route on Android.",
+        "Official terms list 4% cashback on eligible Swiggy, Zomato and Ola spends, subject to merchant conditions.",
+        "Other eligible merchant spends currently earn 1.5% cashback under the linked terms; check the latest terms before applying."
+      ],
+      "hi": [
+        "बैंक की शर्तों में पात्र utility bills, DTH और मोबाइल recharge पर 5% cashback बताया गया है, लेकिन इसके लिए Android पर पात्र Google Pay तरीका ज़रूरी है।",
+        "पात्र Swiggy, Zomato और Ola खर्च पर 4% cashback बताया गया है; merchant की शर्तें लागू होती हैं।",
+        "लिंक की गई शर्तों के अनुसार अन्य पात्र खर्च पर फिलहाल 1.5% cashback है; आवेदन से पहले नई शर्तें जाँचें।"
+      ],
+      "mr": [
+        "बँकेच्या अटींनुसार पात्र utility bills, DTH आणि मोबाइल recharge वर 5% cashback मिळतो; यासाठी Android वरील पात्र Google Pay मार्ग आवश्यक आहे.",
+        "पात्र Swiggy, Zomato आणि Ola खर्चावर 4% cashback नमूद आहे; merchant च्या अटी लागू होतात.",
+        "लिंक केलेल्या अटींनुसार इतर पात्र खर्चावर सध्या 1.5% cashback आहे; अर्जापूर्वी नवीन अटी तपासा."
+      ]
+    },
+    "risks": {
+      "en": [
+        "Joining fee is listed as ₹499; annual fee is ₹499 from year two. The issuer page lists a waiver above ₹2 lakh eligible annual spend; taxes apply.",
+        "Accelerated bill cashback is restricted to eligible payments through Google Pay on Android. Other utility platforms may not qualify.",
+        "Fuel, EMI, rent, wallet loads, insurance and other exclusions may not earn cashback; check current MITC and caps."
+      ],
+      "hi": [
+        "जॉइनिंग फीस ₹499 और दूसरे साल से वार्षिक फीस ₹499 सूचीबद्ध है। बैंक ₹2 लाख से अधिक पात्र सालाना खर्च पर माफी बताता है; टैक्स लागू होते हैं।",
+        "बिल पर बढ़ा हुआ cashback Android पर पात्र Google Pay भुगतान तक सीमित है; दूसरे प्लेटफ़ॉर्म पात्र न हों।",
+        "ईंधन, EMI, किराया, वॉलेट लोड, बीमा और अन्य बाहर रखे खर्च पर cashback नहीं मिल सकता; मौजूदा MITC और caps जाँचें।"
+      ],
+      "mr": [
+        "जॉइनिंग शुल्क ₹499 आणि दुसऱ्या वर्षापासून वार्षिक शुल्क ₹499 नमूद आहे. ₹2 लाखांपेक्षा जास्त पात्र वार्षिक खर्चावर माफी नमूद आहे; कर लागू होतात.",
+        "बिलावरील वाढीव cashback Android वरील पात्र Google Pay पेमेंटपुरता मर्यादित आहे; इतर प्लॅटफॉर्म पात्र नसू शकतात.",
+        "इंधन, EMI, भाडे, wallet load, विमा आणि इतर वगळलेल्या खर्चावर cashback मिळणार नाही; सध्याचे MITC आणि caps तपासा."
+      ]
+    },
+    "eligibility": {
+      "en": "Eligibility depends on issuer policy and applicant profile. Confirm the current eligibility checklist and approval remains the issuer's decision.",
+      "hi": "पात्रता बैंक की नीति और आवेदक पर निर्भर है। मौजूदा पात्रता जाँचें; अंतिम निर्णय बैंक का है।",
+      "mr": "पात्रता बँकेच्या धोरणावर आणि अर्जदाराच्या प्रोफाइलवर अवलंबून आहे. सध्याचे निकष तपासा; अंतिम निर्णय बँकेचा असतो."
+    },
+    "source_url": "https://www.axisbank.com/retail/cards/credit-card/ace-credit-card/features-benefits",
+    "fees_url": "https://www.axisbank.com/retail/cards/credit-card/ace-credit-card/features-benefits",
+    "verified_on": "2026-10-21",
+    "data_status": "official_source_checked_reverify_before_apply",
+    "note": "Checked against Axis Bank product page and cashback terms on 2026-10-21; re-check the exact variant and terms before applying."
+  },
+  {
+    "id": "icici-rupay-credit-card",
+    "name": "ICICI Bank RuPay Credit Card (Coral variant)",
+    "issuer": "ICICI Bank",
+    "category": "upi",
+    "card_network": "RuPay",
+    "annual_fee": 500,
+    "fee_waiver_spend": 150000,
+    "fd_backed": false,
+    "goal_tags": [
+      "upi_payments",
+      "everyday_spends",
+      "fuel_savings"
+    ],
+    "benefits": {
+      "en": [
+        "Issuer says the eligible RuPay credit card can be linked to supported UPI apps for permitted merchant QR/in-app payments.",
+        "The issuer lists reward points on eligible UPI and card transactions, with benefits varying by card variant and terms.",
+        "The Coral variant lists BookMyShow/INOX offers and a fuel-surcharge waiver subject to current conditions."
+      ],
+      "hi": [
+        "बैंक के अनुसार पात्र RuPay क्रेडिट कार्ड को समर्थित UPI ऐप से जोड़कर अनुमति वाले दुकानदार QR या इन-ऐप भुगतान किए जा सकते हैं।",
+        "पात्र UPI और कार्ड लेन-देन पर reward points बताए गए हैं; लाभ कार्ड variant और शर्तों पर निर्भर हैं।",
+        "Coral variant में BookMyShow/INOX ऑफ़र और शर्तों के अधीन fuel surcharge waiver सूचीबद्ध है।"
+      ],
+      "mr": [
+        "बँकेनुसार पात्र RuPay क्रेडिट कार्ड समर्थित UPI ॲपशी जोडून परवानगी असलेल्या व्यापारी QR किंवा in-app पेमेंटसाठी वापरता येते.",
+        "पात्र UPI आणि कार्ड व्यवहारांवर reward points नमूद आहेत; लाभ कार्ड variant व अटींवर अवलंबून आहेत.",
+        "Coral variant मध्ये BookMyShow/INOX ऑफर आणि अटींनुसार fuel surcharge waiver नमूद आहे."
+      ]
+    },
+    "risks": {
+      "en": [
+        "The issuer currently lists ₹500 + GST joining fee and ₹500 + GST annual fee for Coral; specific offers or variants may differ.",
+        "UPI support is not universal: the card, issuer/app and merchant transaction must be eligible; person-to-person transfers and cash-like payments are restricted.",
+        "The listed Coral eligibility includes income and age criteria; approval and final fees depend on the issuer."
+      ],
+      "hi": [
+        "Coral के लिए बैंक फिलहाल ₹500 + GST जॉइनिंग और ₹500 + GST वार्षिक फीस बताता है; ऑफ़र या variant अलग हो सकते हैं।",
+        "हर UPI भुगतान समर्थित नहीं है: कार्ड, बैंक/ऐप और व्यापारी का लेन-देन पात्र होना चाहिए; व्यक्ति-से-व्यक्ति ट्रांसफर और नकद-जैसे भुगतान प्रतिबंधित हैं।",
+        "Coral की सूचीबद्ध पात्रता में आय और उम्र के मानदंड हैं; मंज़ूरी और अंतिम फीस बैंक तय करता है।"
+      ],
+      "mr": [
+        "Coral साठी बँक सध्या ₹500 + GST जॉइनिंग आणि ₹500 + GST वार्षिक शुल्क सांगते; ऑफर किंवा variant वेगळे असू शकतात.",
+        "सर्व UPI पेमेंट समर्थित नसतात: कार्ड, बँक/ॲप आणि व्यापारी व्यवहार पात्र असणे आवश्यक; व्यक्ती-ते-व्यक्ती ट्रान्सफर व रोखसदृश पेमेंट प्रतिबंधित असतात.",
+        "Coral च्या पात्रतेत उत्पन्न व वयाचे निकष नमूद आहेत; मंजुरी आणि अंतिम शुल्क बँक ठरवते."
+      ]
+    },
+    "eligibility": {
+      "en": "The issuer currently lists salaried income of ₹20,000/month or self-employed annual income of ₹2.4 lakh for the Coral variant; check the exact variant and live criteria.",
+      "hi": "Coral variant के लिए बैंक फिलहाल नौकरीपेशा आय ₹20,000/माह या स्वरोज़गार वार्षिक आय ₹2.4 लाख बताता है; सही variant और मौजूदा नियम जाँचें।",
+      "mr": "Coral variant साठी बँक सध्या नोकरी करणाऱ्यांचे ₹20,000/महिना किंवा स्वयंरोजगार वार्षिक उत्पन्न ₹2.4 लाख नमूद करते; अचूक variant आणि सध्याचे निकष तपासा."
+    },
+    "source_url": "https://www.icicibank.com/personal-banking/cards/credit-card/coral-rupay-credit-card",
+    "fees_url": "https://www.icicibank.com/personal-banking/cards/credit-card/coral-rupay-credit-card",
+    "verified_on": "2026-10-21",
+    "data_status": "official_source_checked_reverify_before_apply",
+    "note": "ICICI Bank's current RuPay page covers multiple variants; fees, UPI eligibility and benefits must be matched to the exact Coral card/offer shown to the applicant."
+  },
+  {
+    "id": "indianoil-axis",
+    "name": "IndianOil Axis Bank Credit Card",
+    "issuer": "Axis Bank",
+    "category": "fuel_savings",
+    "card_network": "Check variant with issuer",
+    "annual_fee": 500,
+    "fee_waiver_spend": 350000,
+    "fd_backed": false,
+    "goal_tags": [
+      "fuel_savings",
+      "everyday_spends",
+      "rewards"
+    ],
+    "benefits": {
+      "en": [
+        "Issuer lists fuel-focused value back/rewards at eligible IndianOil outlets; the exact reward value depends on eligible spend and terms.",
+        "A 1% fuel-surcharge waiver is listed for qualifying transactions; transaction range and caps apply.",
+        "The product page lists online-shopping rewards and selected entertainment/dining benefits, subject to current terms."
+      ],
+      "hi": [
+        "बैंक पात्र IndianOil आउटलेट पर ईंधन-केंद्रित value back/rewards बताता है; असली लाभ पात्र खर्च और शर्तों पर निर्भर है।",
+        "योग्य लेन-देन पर 1% fuel surcharge waiver सूचीबद्ध है; राशि की सीमा और caps लागू हैं।",
+        "उत्पाद पेज पर ऑनलाइन खरीदारी reward और कुछ मनोरंजन/डाइनिंग लाभ भी हैं; मौजूदा शर्तें लागू हैं।"
+      ],
+      "mr": [
+        "पात्र IndianOil आउटलेटवरील इंधन खर्चासाठी बँक value back/rewards नमूद करते; प्रत्यक्ष लाभ पात्र खर्च व अटींवर अवलंबून आहे.",
+        "पात्र व्यवहारांवर 1% fuel surcharge waiver नमूद आहे; व्यवहार मर्यादा व caps लागू होतात.",
+        "उत्पादन पानावर ऑनलाइन खरेदी rewards आणि निवडक मनोरंजन/डायनिंग लाभ आहेत; सध्याच्या अटी लागू होतात."
+      ]
+    },
+    "risks": {
+      "en": [
+        "Joining fee is listed as ₹500; annual fee is Nil in year one and ₹500 from year two, plus applicable taxes.",
+        "Annual fee waiver is listed for spend above ₹3.5 lakh in the card anniversary year; ineligible categories are excluded.",
+        "Fuel reward value is concentrated at eligible IndianOil outlets; excluded categories and caps apply, so it may not fit other fuel-station habits."
+      ],
+      "hi": [
+        "जॉइनिंग फीस ₹500 है; पहले साल वार्षिक फीस नहीं और दूसरे साल से ₹500, साथ में लागू टैक्स।",
+        "कार्ड वर्ष में ₹3.5 लाख से अधिक खर्च पर वार्षिक फीस माफी बताई गई है; कुछ श्रेणियाँ इस खर्च में शामिल नहीं होतीं।",
+        "ईंधन का लाभ पात्र IndianOil आउटलेट पर केंद्रित है; exclusions और caps लागू होते हैं, इसलिए अन्य पेट्रोल पंप पर खर्च करने वालों के लिए कम उपयुक्त हो सकता है।"
+      ],
+      "mr": [
+        "जॉइनिंग शुल्क ₹500 आहे; पहिल्या वर्षी वार्षिक शुल्क नाही आणि दुसऱ्या वर्षापासून ₹500, लागू कर वेगळे.",
+        "कार्ड वर्षात ₹3.5 लाखांपेक्षा जास्त खर्चावर वार्षिक शुल्क माफी नमूद आहे; काही श्रेणी मोजल्या जात नाहीत.",
+        "इंधनाचा लाभ पात्र IndianOil आउटलेटवर केंद्रित आहे; exclusions व caps लागू होतात, त्यामुळे इतर पेट्रोल पंप वापरणाऱ्यांसाठी कमी योग्य असू शकतो."
+      ]
+    },
+    "eligibility": {
+      "en": "Age, income, location, credit history and approval criteria are set by the issuer; confirm the live eligibility page before applying.",
+      "hi": "उम्र, आय, स्थान, क्रेडिट इतिहास और मंज़ूरी के नियम बैंक तय करता है; आवेदन से पहले मौजूदा पात्रता पेज देखें।",
+      "mr": "वय, उत्पन्न, ठिकाण, क्रेडिट इतिहास आणि मंजुरीचे निकष बँक ठरवते; अर्जापूर्वी सध्याचे पात्रता पान तपासा."
+    },
+    "source_url": "https://www.axisbank.com/retail/cards/credit-card/indianoil-axis-bank-credit-card/features-benefits",
+    "fees_url": "https://www.axisbank.com/retail/cards/credit-card/indianoil-axis-bank-credit-card/features-benefits",
+    "verified_on": "2026-10-21",
+    "data_status": "official_source_checked_reverify_before_apply",
+    "note": "Checked against Axis Bank product page on 2026-10-21; check the live fee schedule and exclusions before applying."
+  },
+  {
+    "id": "hdfc-swiggy",
+    "name": "Swiggy HDFC Bank Credit Card",
+    "issuer": "HDFC Bank",
+    "category": "cashback",
+    "card_network": "Check variant with issuer",
+    "annual_fee": 500,
+    "fee_waiver_spend": 200000,
+    "fd_backed": false,
+    "goal_tags": [
+      "cashback",
+      "online_shopping",
+      "everyday_spends"
+    ],
+    "benefits": {
+      "en": [
+        "Issuer terms list 10% cashback on eligible Swiggy app spends (food delivery, Instamart, Genie and Dineout), capped at ₹1,500 per billing cycle.",
+        "Issuer terms list 5% cashback on eligible online-shopping categories, capped at ₹1,500 per billing cycle.",
+        "Issuer terms list 1% cashback on other eligible spends, capped at ₹500 per billing cycle."
+      ],
+      "hi": [
+        "बैंक की शर्तों में पात्र Swiggy ऐप खर्च (food delivery, Instamart, Genie और Dineout) पर 10% cashback, प्रति billing cycle ₹1,500 तक, बताया गया है।",
+        "पात्र ऑनलाइन-शॉपिंग श्रेणियों पर 5% cashback, प्रति billing cycle ₹1,500 तक, बताया गया है।",
+        "अन्य पात्र खर्च पर 1% cashback, प्रति billing cycle ₹500 तक, बताया गया है।"
+      ],
+      "mr": [
+        "बँकेच्या अटींनुसार पात्र Swiggy ॲप खर्चावर (food delivery, Instamart, Genie, Dineout) 10% cashback, प्रति billing cycle ₹1,500 पर्यंत मिळू शकतो.",
+        "पात्र ऑनलाइन खरेदी श्रेणींवर 5% cashback, प्रति billing cycle ₹1,500 पर्यंत नमूद आहे.",
+        "इतर पात्र खर्चावर 1% cashback, प्रति billing cycle ₹500 पर्यंत नमूद आहे."
+      ]
+    },
+    "risks": {
+      "en": [
+        "Joining and renewal fee is listed as ₹500 plus applicable taxes; renewal fee waiver requires ₹2 lakh eligible annual spend.",
+        "Cashback has separate billing-cycle caps and exclusions including fuel, rent, jewellery, government payments, EMI and wallets.",
+        "It may be poor value if you rarely use Swiggy or eligible online categories; approval depends on HDFC Bank."
+      ],
+      "hi": [
+        "जॉइनिंग और renewal फीस ₹500 तथा लागू टैक्स है; renewal माफी के लिए ₹2 लाख पात्र सालाना खर्च चाहिए।",
+        "अलग-अलग cashback caps और fuel, rent, jewellery, सरकारी भुगतान, EMI व wallet जैसी exclusions हैं।",
+        "यदि आप Swiggy या पात्र ऑनलाइन श्रेणियों का कम उपयोग करते हैं तो लाभ कम हो सकता है; मंज़ूरी HDFC Bank तय करता है।"
+      ],
+      "mr": [
+        "जॉइनिंग आणि renewal शुल्क ₹500 व लागू कर आहे; renewal माफीसाठी ₹2 लाख पात्र वार्षिक खर्च आवश्यक आहे.",
+        "वेगवेगळ्या cashback caps आणि fuel, rent, jewellery, सरकारी पेमेंट, EMI व wallet यांसारखे exclusions आहेत.",
+        "Swiggy किंवा पात्र ऑनलाइन श्रेणींचा वापर कमी असल्यास लाभ कमी मिळू शकतो; मंजुरी HDFC Bank ठरवते."
+      ]
+    },
+    "eligibility": {
+      "en": "Eligibility, income requirements, location and approval are set by HDFC Bank; confirm the current application page.",
+      "hi": "पात्रता, आय की शर्तें, स्थान और मंज़ूरी HDFC Bank तय करता है; मौजूदा आवेदन पेज देखें।",
+      "mr": "पात्रता, उत्पन्नाच्या अटी, ठिकाण आणि मंजुरी HDFC Bank ठरवते; सध्याचे अर्ज पान तपासा."
+    },
+    "source_url": "https://www.hdfc.bank.in/credit-cards/swiggy-hdfc-bank-credit-card",
+    "fees_url": "https://www.hdfc.bank.in/credit-cards/swiggy-hdfc-bank-credit-card/fees-and-charges",
+    "verified_on": "2026-10-21",
+    "data_status": "official_source_checked_reverify_before_apply",
+    "note": "Checked against HDFC Bank official product/fee page on 2026-10-21; product categories and cashback caps can change."
+  },
+  {
+    "id": "paytm-hdfc-select",
+    "name": "Paytm HDFC Bank Select Credit Card",
+    "issuer": "HDFC Bank",
+    "category": "cashback",
+    "card_network": "Check variant with issuer",
+    "annual_fee": 1000,
+    "fee_waiver_spend": 150000,
+    "fd_backed": false,
+    "goal_tags": [
+      "bill_payments",
+      "online_shopping",
+      "cashback",
+      "everyday_spends"
+    ],
+    "benefits": {
+      "en": [
+        "Issuer lists 5% CashPoints on eligible Paytm recharge, utility, travel, movies and mini-app purchases, capped at 1,500 CashPoints per calendar month.",
+        "Issuer lists 3% CashPoints on eligible Swiggy, AJIO, BigBasket and Uber spends, capped at 500 CashPoints per calendar month.",
+        "Issuer lists 1% CashPoints on other eligible retail transactions, capped at 2,000 CashPoints per calendar month."
+      ],
+      "hi": [
+        "बैंक पात्र Paytm recharge, utility, travel, movies और mini-app खरीद पर 5% CashPoints बताता है, प्रति कैलेंडर माह 1,500 CashPoints तक।",
+        "पात्र Swiggy, AJIO, BigBasket और Uber खर्च पर 3% CashPoints, प्रति कैलेंडर माह 500 तक, बताए गए हैं।",
+        "अन्य पात्र retail लेन-देन पर 1% CashPoints, प्रति कैलेंडर माह 2,000 तक, बताए गए हैं।"
+      ],
+      "mr": [
+        "बँक पात्र Paytm recharge, utility, travel, movies आणि mini-app खरेदीवर 5% CashPoints, प्रति calendar month 1,500 पर्यंत नमूद करते.",
+        "पात्र Swiggy, AJIO, BigBasket आणि Uber खर्चावर 3% CashPoints, प्रति calendar month 500 पर्यंत नमूद आहेत.",
+        "इतर पात्र retail व्यवहारांवर 1% CashPoints, प्रति calendar month 2,000 पर्यंत नमूद आहेत."
+      ]
+    },
+    "risks": {
+      "en": [
+        "Annual membership fee is ₹1,000 plus GST; renewal waiver is listed at ₹1.5 lakh eligible non-EMI spend in 12 months.",
+        "CashPoints are not the same as straight cash cashback; redemption rules apply.",
+        "Fuel, EMI, wallet loads, rent and government-related transactions are excluded from earning CashPoints."
+      ],
+      "hi": [
+        "वार्षिक सदस्यता फीस ₹1,000 + GST है; 12 महीनों में ₹1.5 लाख पात्र non-EMI खर्च पर renewal माफी बताई गई है।",
+        "CashPoints सीधे नकद cashback जैसे नहीं हैं; redemption नियम लागू हैं।",
+        "Fuel, EMI, wallet load, rent और सरकारी लेन-देन पर CashPoints नहीं मिलते।"
+      ],
+      "mr": [
+        "वार्षिक सदस्यता शुल्क ₹1,000 + GST आहे; 12 महिन्यांत ₹1.5 लाख पात्र non-EMI खर्चावर renewal माफी नमूद आहे.",
+        "CashPoints म्हणजे थेट रोख cashback नाही; redemption नियम लागू होतात.",
+        "Fuel, EMI, wallet load, rent आणि सरकारी व्यवहारांवर CashPoints मिळत नाहीत."
+      ]
+    },
+    "eligibility": {
+      "en": "Eligibility and approval are determined by HDFC Bank. Check current age, income, location and documentation criteria.",
+      "hi": "पात्रता और मंज़ूरी HDFC Bank तय करता है। उम्र, आय, स्थान और दस्तावेज़ के मौजूदा नियम देखें।",
+      "mr": "पात्रता आणि मंजुरी HDFC Bank ठरवते. वय, उत्पन्न, ठिकाण आणि कागदपत्रांचे सध्याचे निकष तपासा."
+    },
+    "source_url": "https://www.hdfc.bank.in/credit-cards/paytm-select-credit-card",
+    "fees_url": "https://www.hdfc.bank.in/credit-cards/paytm-select-credit-card/fees-and-charges",
+    "verified_on": "2026-10-21",
+    "data_status": "official_source_checked_reverify_before_apply",
+    "note": "Checked against HDFC Bank official product/fee pages on 2026-10-21. CashPoints redemption and non-earning categories matter."
+  },
+  {
+    "id": "hsbc-live-plus",
+    "name": "HSBC Live+ Credit Card",
+    "issuer": "HSBC India",
+    "category": "cashback",
+    "card_network": "Visa",
+    "annual_fee": 999,
+    "fee_waiver_spend": 200000,
+    "fd_backed": false,
+    "minimum_monthly_income_salaried": 50000,
+    "minimum_annual_income_self_employed": 1200000,
+    "goal_tags": [
+      "cashback",
+      "online_shopping",
+      "bill_payments",
+      "travel",
+      "everyday_spends"
+    ],
+    "benefits": {
+      "en": [
+        "Issuer lists 10% cashback on eligible dining, food delivery, grocery, shopping and utility spends, capped at ₹1,200 per month.",
+        "Issuer lists 1.5% unlimited cashback on most other eligible spends, subject to exclusions.",
+        "The current product page lists two domestic and one international complimentary lounge visits yearly and 1.99% forex markup."
+      ],
+      "hi": [
+        "बैंक पात्र dining, food delivery, grocery, shopping और utility खर्च पर 10% cashback बताता है, प्रति माह ₹1,200 तक।",
+        "अधिकांश अन्य पात्र खर्च पर 1.5% unlimited cashback बताया गया है; exclusions लागू हैं।",
+        "मौजूदा उत्पाद पेज पर सालाना दो domestic और एक international lounge visit तथा 1.99% forex markup सूचीबद्ध है।"
+      ],
+      "mr": [
+        "बँक पात्र dining, food delivery, grocery, shopping आणि utility खर्चावर 10% cashback, दरमहा ₹1,200 पर्यंत, नमूद करते.",
+        "बहुतेक इतर पात्र खर्चावर 1.5% unlimited cashback नमूद आहे; exclusions लागू होतात.",
+        "सध्याच्या उत्पादन पानावर वर्षाला दोन domestic आणि एक international lounge visit व 1.99% forex markup नमूद आहे."
+      ]
+    },
+    "risks": {
+      "en": [
+        "Joining and annual fees are ₹999 plus applicable taxes; annual fee is waived only if eligible annual spend exceeds ₹2 lakh.",
+        "The accelerated 10% categories share a ₹1,200 monthly cap; fuel and other exclusions may not earn cashback.",
+        "The issuer lists minimum annual income of ₹6 lakh for salaried applicants and ₹12 lakh for self-employed applicants, plus an approved-city restriction. This can make it unsuitable for many first-time users."
+      ],
+      "hi": [
+        "जॉइनिंग और वार्षिक फीस ₹999 + लागू टैक्स है; सालाना पात्र खर्च ₹2 लाख से अधिक होने पर वार्षिक फीस माफ होती है।",
+        "10% वाली श्रेणियों पर ₹1,200 का मासिक cap है; fuel और अन्य exclusions पर cashback नहीं मिल सकता।",
+        "बैंक नौकरीपेशा के लिए ₹6 लाख और self-employed के लिए ₹12 लाख वार्षिक आय तथा चुनिंदा शहरों की शर्त बताता है। इसलिए यह कई नए उपयोगकर्ताओं के लिए उपयुक्त नहीं हो सकता।"
+      ],
+      "mr": [
+        "जॉइनिंग व वार्षिक शुल्क ₹999 + लागू कर आहे; पात्र वार्षिक खर्च ₹2 लाखांपेक्षा जास्त असल्यास वार्षिक शुल्क माफ होते.",
+        "10% श्रेणींसाठी ₹1,200 मासिक cap आहे; fuel व इतर exclusions वर cashback मिळणार नाही.",
+        "बँक नोकरी करणाऱ्यांसाठी ₹6 लाख आणि स्वयंरोजगारासाठी ₹12 लाख वार्षिक उत्पन्न तसेच निवडक शहरांची अट सांगते. त्यामुळे अनेक नव्या वापरकर्त्यांसाठी हे योग्य नसू शकते."
+      ]
+    },
+    "eligibility": {
+      "en": "Issuer page lists age 18–65 for salaried applicants, 25–65 for self-employed applicants; minimum income ₹6 lakh/year salaried or ₹12 lakh/year self-employed and an eligible city. Check the live page; approval is not guaranteed.",
+      "hi": "बैंक पेज पर नौकरीपेशा के लिए उम्र 18–65, self-employed के लिए 25–65; न्यूनतम आय क्रमशः ₹6 लाख/वर्ष और ₹12 लाख/वर्ष तथा चुने हुए शहर की शर्त है। मौजूदा पेज देखें; मंज़ूरी की गारंटी नहीं।",
+      "mr": "बँक पानानुसार नोकरी करणाऱ्यांसाठी वय 18–65, स्वयंरोजगारासाठी 25–65; किमान वार्षिक उत्पन्न अनुक्रमे ₹6 लाख आणि ₹12 लाख तसेच पात्र शहर आवश्यक आहे. सध्याचे पान तपासा; मंजुरीची हमी नाही."
+    },
+    "source_url": "https://www.hsbc.bank.in/credit-cards/products/live-plus/",
+    "fees_url": "https://www.hsbc.bank.in/credit-cards/products/live-plus/",
+    "verified_on": "2026-10-21",
+    "data_status": "official_source_checked_reverify_before_apply",
+    "note": "Checked against HSBC India official page on 2026-10-21. Issuer lists city and income restrictions; confirm live terms before applying."
+  },
+  {
+    "id": "hdfc-upi-rupay",
+    "name": "HDFC Bank UPI RuPay Credit Card",
+    "issuer": "HDFC Bank",
+    "category": "upi",
+    "card_network": "RuPay",
+    "annual_fee": null,
+    "fee_waiver_spend": 25000,
+    "fd_backed": false,
+    "goal_tags": [
+      "upi_payments",
+      "bill_payments",
+      "everyday_spends",
+      "cashback"
+    ],
+    "benefits": {
+      "en": [
+        "Issuer lists 3% CashPoints on eligible groceries, supermarkets, dining and PayZapp transactions.",
+        "Issuer lists 2% CashPoints on eligible utility bills and 1% on other eligible spends; exclusions apply.",
+        "A virtual RuPay credit card can be linked to supported UPI apps for eligible merchant transactions."
+      ],
+      "hi": [
+        "बैंक पात्र grocery, supermarket, dining और PayZapp लेन-देन पर 3% CashPoints बताता है।",
+        "पात्र utility bills पर 2% CashPoints और अन्य पात्र खर्च पर 1% बताया गया है; exclusions लागू हैं।",
+        "Virtual RuPay credit card को समर्थित UPI ऐप से जोड़कर पात्र दुकानदार भुगतान किए जा सकते हैं।"
+      ],
+      "mr": [
+        "बँक पात्र grocery, supermarket, dining आणि PayZapp व्यवहारांवर 3% CashPoints नमूद करते.",
+        "पात्र utility bills वर 2% CashPoints आणि इतर पात्र खर्चावर 1% नमूद आहे; exclusions लागू होतात.",
+        "Virtual RuPay credit card समर्थित UPI ॲपशी जोडून पात्र व्यापारी पेमेंट करता येतात."
+      ]
+    },
+    "risks": {
+      "en": [
+        "The card is virtual-only according to the issuer page; check whether that suits your usage.",
+        "CashPoints redemption value is not ₹1 per point: the issuer page lists 1 CashPoint = ₹0.25 for statement redemption, with a 500-point minimum.",
+        "HDFC pages have shown different fee figures; check the fee displayed in the current official application journey before applying."
+      ],
+      "hi": [
+        "बैंक के पेज के अनुसार कार्ड केवल virtual है; देखें कि यह आपकी ज़रूरत के लिए ठीक है या नहीं।",
+        "CashPoints का मूल्य ₹1 प्रति point नहीं है: स्टेटमेंट redemption के लिए 1 CashPoint = ₹0.25 और न्यूनतम 500 points बताए गए हैं।",
+        "HDFC के अलग पेजों पर शुल्क के अलग आँकड़े दिखे हैं; आवेदन के समय मौजूदा आधिकारिक फीस जाँचें।"
+      ],
+      "mr": [
+        "बँकेच्या पानानुसार कार्ड फक्त virtual आहे; तुमच्या वापरासाठी ते योग्य आहे का तपासा.",
+        "CashPoints चे मूल्य प्रति point ₹1 नाही: statement redemption साठी 1 CashPoint = ₹0.25 आणि किमान 500 points नमूद आहेत.",
+        "HDFC च्या वेगवेगळ्या पानांवर शुल्काचे वेगवेगळे आकडे दिसतात; अर्जाच्या वेळी सध्याचे अधिकृत शुल्क तपासा."
+      ]
+    },
+    "eligibility": {
+      "en": "Eligibility and exact fees must be confirmed with HDFC Bank. The card supports only eligible merchant payments via participating RuPay/UPI flows.",
+      "hi": "पात्रता और सही फीस HDFC Bank से जाँचें। UPI/RuPay के ज़रिए केवल पात्र व्यापारी भुगतान समर्थित हैं।",
+      "mr": "पात्रता आणि अचूक शुल्क HDFC Bank कडून तपासा. UPI/RuPay द्वारे फक्त पात्र व्यापारी व्यवहार समर्थित आहेत."
+    },
+    "source_url": "https://www.hdfc.bank.in/credit-cards/hdfc-bank-upi-rupay-credit-card",
+    "fees_url": "https://www.hdfc.bank.in/credit-cards/hdfc-bank-upi-rupay-credit-card/fees-and-charges",
+    "verified_on": "2026-10-21",
+    "data_status": "official_source_checked_fee_conflict_reverify",
+    "note": "HDFC’s product and fee pages were checked on 2026-10-21, but a separate HDFC comparison listing showed a different fee figure. Fee is intentionally left blank; verify the live application terms."
+  },
+  {
+    "id": "axis-myzone",
+    "name": "Axis Bank My Zone Credit Card",
+    "issuer": "Axis Bank",
+    "category": "lifestyle",
+    "card_network": "Check variant with issuer",
+    "annual_fee": 500,
+    "joining_fee": 500,
+    "fee_waiver_spend": null,
+    "fd_backed": false,
+    "goal_tags": [
+      "lifestyle_offers",
+      "entertainment",
+      "dining",
+      "shopping",
+      "everyday_spends"
+    ],
+    "benefits": {
+      "en": [
+        "Issuer’s product page lists a one-year SonyLIV Premium subscription offer, subject to terms.",
+        "Lists a ₹120 Swiggy discount up to twice a month and an AJIO offer up to ₹1,000 against a minimum purchase; offer codes and spend rules apply.",
+        "May suit people who actually use the listed entertainment and shopping offers rather than maximising flat cashback."
+      ],
+      "hi": [
+        "बैंक के उत्पाद पेज पर शर्तों के अधीन एक साल की SonyLIV Premium सदस्यता का ऑफर सूचीबद्ध है।",
+        "पेज पर Swiggy के लिए ₹120 की छूट महीने में अधिकतम दो बार और न्यूनतम खरीद पर AJIO ऑफर सूचीबद्ध है; कूपन और खर्च की शर्तें लागू हैं।",
+        "यह उन लोगों को अधिक उपयोगी हो सकता है जो सूचीबद्ध मनोरंजन और शॉपिंग ऑफर सच में इस्तेमाल करते हैं; यह जरूरी नहीं कि सबसे अच्छा flat cashback कार्ड हो।"
+      ],
+      "mr": [
+        "बँकेच्या उत्पादन पानावर अटींसह एक वर्षाच्या SonyLIV Premium सदस्यतेची ऑफर नमूद आहे.",
+        "पानावर Swiggy साठी महिन्यात जास्तीत जास्त दोनदा ₹120 सूट आणि किमान खरेदीवर AJIO ऑफर नमूद आहे; कूपन व खर्चाच्या अटी लागू आहेत.",
+        "सूचीबद्ध मनोरंजन आणि खरेदी ऑफर प्रत्यक्ष वापरणाऱ्यांसाठी हा पर्याय उपयुक्त ठरू शकतो; तो सर्वाधिक flat cashback देणारे कार्ड असेलच असे नाही."
+      ]
+    },
+    "risks": {
+      "en": [
+        "Joining fee and annual fee are listed as ₹500 plus applicable taxes; confirm current fee and any joining waiver conditions.",
+        "Offers have minimum spends, eligible channels, coupon and frequency restrictions and can change.",
+        "Do not value unused subscriptions or discounts as savings; issuer approval and current terms apply."
+      ],
+      "hi": [
+        "जॉइनिंग और वार्षिक फीस ₹500 + लागू टैक्स सूचीबद्ध हैं; मौजूदा फीस और किसी joining-waiver की शर्त जाँचें।",
+        "ऑफर में न्यूनतम खर्च, योग्य चैनल, कूपन और उपयोग की सीमाएँ हैं; शर्तें बदल सकती हैं।",
+        "जिस सदस्यता या छूट का उपयोग नहीं करेंगे उसे बचत न मानें; मंज़ूरी और वर्तमान शर्तें बैंक तय करता है।"
+      ],
+      "mr": [
+        "जॉइनिंग व वार्षिक शुल्क ₹500 + लागू कर नमूद आहेत; सध्याचे शुल्क आणि joining waiver अटी तपासा.",
+        "ऑफरमध्ये किमान खर्च, पात्र चॅनेल, कूपन आणि वापराच्या मर्यादा आहेत; अटी बदलू शकतात.",
+        "वापर न केलेल्या सदस्यतेला किंवा सवलतीला बचत समजू नका; मंजुरी व सध्याच्या अटी बँक ठरवते."
+      ]
+    },
+    "eligibility": {
+      "en": "Eligibility depends on Axis Bank policy and applicant profile. Check the current application criteria; approval is not guaranteed.",
+      "hi": "पात्रता Axis Bank की नीति और आवेदक पर निर्भर है। मौजूदा आवेदन मानदंड जाँचें; मंज़ूरी की गारंटी नहीं है।",
+      "mr": "पात्रता Axis Bank च्या धोरणावर व अर्जदाराच्या प्रोफाइलवर अवलंबून आहे. सध्याचे निकष तपासा; मंजुरीची हमी नाही."
+    },
+    "source_url": "https://www.axisbank.com/retail/cards/credit-card/my-zone-credit-card",
+    "fees_url": "https://www.axisbank.com/retail/cards/credit-card/my-zone-credit-card",
+    "verified_on": "2026-10-21",
+    "data_status": "official_source_checked_reverify_before_apply",
+    "note": "Headline fee and listed entertainment/shopping offers checked against Axis Bank public product information on 2026-10-21; check current offer T&Cs."
+  },
+  {
+    "id": "hdfc-tata-neu-plus",
+    "name": "Tata Neu Plus HDFC Bank Credit Card",
+    "issuer": "HDFC Bank",
+    "category": "co_branded",
+    "card_network": "Check RuPay or Visa variant with issuer",
+    "annual_fee": 499,
+    "joining_fee": 499,
+    "fee_waiver_spend": 100000,
+    "fd_backed": false,
+    "goal_tags": [
+      "online_shopping",
+      "upi_payments",
+      "bill_payments",
+      "rewards",
+      "everyday_spends",
+      "cashback"
+    ],
+    "benefits": {
+      "en": [
+        "Issuer lists 2% back as NeuCoins on eligible non-EMI spend at Tata/partner brands and 1% on eligible non-Tata spends or merchant EMI.",
+        "Eligible UPI spend can earn up to 1% as NeuCoins, with an issuer-described cap of 500 NeuCoins per calendar month and conditions.",
+        "Renewal fee waiver is listed for eligible annual spend of ₹1 lakh; some variants have milestone-based lounge voucher benefits."
+      ],
+      "hi": [
+        "बैंक पात्र non-EMI Tata/partner ब्रांड खर्च पर 2% NeuCoins और पात्र दूसरे ब्रांड या merchant EMI खर्च पर 1% बताता है।",
+        "पात्र UPI खर्च पर अधिकतम 1% NeuCoins मिल सकते हैं; बैंक 500 NeuCoins प्रति कैलेंडर माह की सीमा और शर्तें बताता है।",
+        "पात्र सालाना ₹1 लाख खर्च पर renewal fee माफी सूचीबद्ध है; कुछ variants में खर्च पर आधारित lounge voucher लाभ हैं।"
+      ],
+      "mr": [
+        "बँक पात्र non-EMI Tata/partner ब्रँड खर्चावर 2% NeuCoins आणि पात्र इतर ब्रँड किंवा merchant EMI खर्चावर 1% नमूद करतो.",
+        "पात्र UPI खर्चावर 1% पर्यंत NeuCoins मिळू शकतात; बँक प्रति कॅलेंडर महिन्यात 500 NeuCoins मर्यादा व अटी सांगते.",
+        "पात्र वार्षिक ₹1 लाख खर्चावर renewal fee माफी नमूद आहे; काही variants मध्ये खर्चावर आधारित lounge voucher लाभ आहेत."
+      ]
+    },
+    "risks": {
+      "en": [
+        "Joining/renewal fee is listed as ₹499 plus applicable taxes; waiver conditions apply.",
+        "NeuCoins are not identical to unrestricted cash; redemption value, validity, eligible brands and caps matter.",
+        "Fuel, wallet, rental, government and online-gaming categories are excluded from rewards in the current terms; UPI rewards and lounge vouchers have conditions."
+      ],
+      "hi": [
+        "जॉइनिंग/renewal फीस ₹499 + लागू टैक्स सूचीबद्ध है; waiver की शर्तें लागू हैं।",
+        "NeuCoins सीधे बिना शर्त नकद के समान नहीं हैं; redemption value, validity, योग्य ब्रांड और caps महत्त्वपूर्ण हैं।",
+        "मौजूदा शर्तों में fuel, wallet, rent, government और online gaming खर्च पर rewards नहीं हैं; UPI reward और lounge voucher पर भी शर्तें हैं।"
+      ],
+      "mr": [
+        "जॉइनिंग/renewal शुल्क ₹499 + लागू कर नमूद आहे; waiver अटी लागू आहेत.",
+        "NeuCoins म्हणजे कोणत्याही अटींशिवाय रोख पैसे नव्हेत; redemption value, validity, पात्र ब्रँड आणि caps महत्त्वाचे आहेत.",
+        "सध्याच्या अटींमध्ये fuel, wallet, rent, government आणि online gaming खर्चावर rewards नाहीत; UPI rewards व lounge vouchers साठीही अटी आहेत."
+      ]
+    },
+    "eligibility": {
+      "en": "Eligibility, variant/network and approval are determined by HDFC Bank. Verify the exact variant and current application terms.",
+      "hi": "पात्रता, variant/network और मंज़ूरी HDFC Bank तय करता है। सही variant और मौजूदा आवेदन शर्तें जाँचें।",
+      "mr": "पात्रता, variant/network आणि मंजुरी HDFC Bank ठरवते. अचूक variant व सध्याच्या अर्जाच्या अटी तपासा."
+    },
+    "source_url": "https://www.hdfc.bank.in/credit-cards/tata-neu-plus-hdfc-bank-credit-card",
+    "fees_url": "https://www.hdfc.bank.in/credit-cards/tata-neu-plus-hdfc-bank-credit-card",
+    "verified_on": "2026-10-21",
+    "data_status": "official_source_checked_reverify_before_apply",
+    "note": "NeuCoins reward rates, exclusions, fee and lounge conditions checked on HDFC Bank public page on 2026-10-21; verify terms before applying."
+  },
+  {
+    "id": "axis-atlas",
+    "name": "Axis Bank ATLAS Credit Card",
+    "issuer": "Axis Bank",
+    "category": "travel",
+    "card_network": "Check current variant with issuer",
+    "annual_fee": 5000,
+    "fee_waiver_spend": null,
+    "minimum_fd": null,
+    "minimum_monthly_income_salaried": 100000,
+    "minimum_annual_income_self_employed": 1500000,
+    "fd_backed": false,
+    "goal_tags": [
+      "travel",
+      "rewards",
+      "foreign_currency_spend"
+    ],
+    "benefits": {
+      "en": [
+        "The issuer lists 2,500 EDGE Miles after the first transaction within 37 days for eligible new cards; check the current offer terms.",
+        "The issuer lists 5 EDGE Miles per ₹100 on eligible direct airline/hotel and Travel EDGE bookings and 2 EDGE Miles per ₹100 on other eligible retail spends.",
+        "The issuer lists travel-oriented benefits and milestone rewards, subject to tier and spend conditions."
+      ],
+      "hi": [
+        "पात्र नए कार्ड पर 37 दिनों के भीतर पहला लेन-देन करने पर 2,500 EDGE Miles का स्वागत लाभ सूचीबद्ध है; वर्तमान ऑफ़र की शर्तें देखें।",
+        "पात्र direct airline/hotel और Travel EDGE बुकिंग पर ₹100 पर 5 EDGE Miles तथा अन्य पात्र retail खर्च पर ₹100 पर 2 EDGE Miles सूचीबद्ध हैं।",
+        "यात्रा से जुड़े लाभ और milestone rewards हैं, लेकिन tier और खर्च की शर्तें लागू होती हैं।"
+      ],
+      "mr": [
+        "पात्र नवीन कार्डवर 37 दिवसांत पहिला व्यवहार केल्यास 2,500 EDGE Miles स्वागत लाभ नमूद आहे; सध्याच्या ऑफरच्या अटी तपासा.",
+        "पात्र direct airline/hotel आणि Travel EDGE बुकिंगवर ₹100 मागे 5 EDGE Miles, तर इतर पात्र retail खर्चावर ₹100 मागे 2 EDGE Miles नमूद आहेत.",
+        "प्रवासाशी संबंधित लाभ आणि milestone rewards आहेत; tier आणि खर्चाच्या अटी लागू होतात."
+      ]
+    },
+    "risks": {
+      "en": [
+        "Joining and annual fee are listed at ₹5,000 plus applicable GST, so it can be poor value if you do not use travel benefits.",
+        "Miles are not cash and redemption/transfer rules apply.",
+        "Fuel, rent, wallet, insurance, utility/telecom, government and jewellery spends are among excluded reward/fee-waiver categories under current terms.",
+        "The issuer lists indicative net annual income criteria of ₹12 lakh salaried / ₹15 lakh self-employed; final approval is the issuer's decision."
+      ],
+      "hi": [
+        "जॉइनिंग और वार्षिक शुल्क ₹5,000 + लागू GST है; यात्रा लाभ उपयोग न करने पर यह महँगा पड़ सकता है।",
+        "Miles नकद नहीं हैं; redemption और transfer की शर्तें लागू हैं।",
+        "मौजूदा शर्तों में fuel, rent, wallet, insurance, utility/telecom, government और jewellery खर्च पर reward/fee-waiver exclusions हैं।",
+        "बैंक की संकेतात्मक सालाना शुद्ध आय शर्त: salaried ₹12 लाख / self-employed ₹15 लाख; अंतिम मंज़ूरी बैंक की है।"
+      ],
+      "mr": [
+        "जॉइनिंग आणि वार्षिक शुल्क ₹5,000 + लागू GST आहे; प्रवासाचे लाभ वापरत नसल्यास हे महाग पडू शकते.",
+        "Miles म्हणजे रोख रक्कम नाही; redemption आणि transfer अटी लागू होतात.",
+        "सध्याच्या अटींनुसार fuel, rent, wallet, insurance, utility/telecom, government आणि jewellery खर्चांवर reward/fee-waiver exclusions आहेत.",
+        "बँकेचे संकेतात्मक वार्षिक निव्वळ उत्पन्न निकष: salaried ₹12 लाख / self-employed ₹15 लाख; अंतिम मंजुरी बँकेची आहे."
+      ]
+    },
+    "eligibility": {
+      "en": "Issuer lists indicative minimum net annual income of ₹12 lakh for salaried and ₹15 lakh for self-employed applicants. Age, documentation and other criteria also apply; final approval is at the issuer's discretion.",
+      "hi": "बैंक salaried आवेदकों के लिए ₹12 लाख और self-employed के लिए ₹15 लाख की संकेतात्मक न्यूनतम शुद्ध सालाना आय बताता है। उम्र, दस्तावेज़ और अन्य शर्तें भी लागू होती हैं; अंतिम मंज़ूरी बैंक की है।",
+      "mr": "बँक salaried अर्जदारांसाठी ₹12 लाख आणि self-employed साठी ₹15 लाख संकेतात्मक किमान निव्वळ वार्षिक उत्पन्न सांगते. वय, कागदपत्रे व इतर अटी लागू होतात; अंतिम मंजुरी बँकेची आहे."
+    },
+    "source_url": "https://www.axis.bank.in/cards/credit-card/axis-bank-atlas-credit-card",
+    "fees_url": "https://www.axis.bank.in/cards/credit-card/axis-bank-atlas-credit-card",
+    "verified_on": "2026-10-21",
+    "data_status": "official_source_checked_reverify_before_apply",
+    "note": "Official Axis Bank product page checked 2026-10-21. Verify current fees, exclusions and offers before applying. Miles are not cash.",
+    "minimum_age": 18,
+    "maximum_age_salaried": 70,
+    "maximum_age_self_employed": 70
+  },
+  {
+    "id": "hdfc-regalia-gold",
+    "name": "HDFC Bank Regalia Gold",
+    "issuer": "HDFC Bank",
+    "category": "travel",
+    "card_network": "Check current variant with issuer",
+    "annual_fee": 2500,
+    "fee_waiver_spend": 400000,
+    "minimum_fd": null,
+    "fd_backed": false,
+    "goal_tags": [
+      "travel",
+      "rewards",
+      "lifestyle_offers"
+    ],
+    "benefits": {
+      "en": [
+        "The issuer lists travel-related benefits, reward points and milestone vouchers, subject to terms.",
+        "The issuer lists 12 domestic lounge visits and 6 international lounge visits as part of its stated benefits; check current access rules and eligibility.",
+        "Annual fee renewal waiver is listed after ₹4 lakh spend within 12 billing cycles of the anniversary year."
+      ],
+      "hi": [
+        "बैंक शर्तों के अनुसार यात्रा लाभ, reward points और milestone vouchers बताता है।",
+        "बैंक 12 domestic और 6 international lounge visits सूचीबद्ध करता है; वर्तमान lounge नियम और पात्रता जाँचें।",
+        "Anniversary year के 12 billing cycles में ₹4 लाख खर्च करने पर renewal fee waiver सूचीबद्ध है।"
+      ],
+      "mr": [
+        "बँक अटींनुसार प्रवास लाभ, reward points आणि milestone vouchers सांगते.",
+        "बँक 12 domestic आणि 6 international lounge visits नमूद करते; सध्याचे lounge नियम आणि पात्रता तपासा.",
+        "Anniversary year मधील 12 billing cycles मध्ये ₹4 लाख खर्च केल्यास renewal fee waiver नमूद आहे."
+      ]
+    },
+    "risks": {
+      "en": [
+        "Joining and renewal fee are listed at ₹2,500 plus applicable taxes unless an offer or waiver applies.",
+        "Lounge visits, vouchers, welcome benefits and reward values have eligibility rules and may change.",
+        "This is a paid card; compare realistic benefits you will actually use against the fee.",
+        "Published income criteria differ by employment category: government salaried >₹1 lakh net/month, non-government salaried >₹1.5 lakh net/month, self-employed ITR >₹18 lakh/year. The issuer can change criteria and makes the decision."
+      ],
+      "hi": [
+        "ऑफ़र या waiver लागू न हो तो जॉइनिंग और renewal fee ₹2,500 + टैक्स है।",
+        "Lounge visits, vouchers, welcome benefits और reward value पर पात्रता नियम हैं और वे बदल सकते हैं।",
+        "यह शुल्क वाला कार्ड है; वास्तविक उपयोग के लाभ की तुलना फीस से करें।",
+        "प्रकाशित आय शर्तें नौकरी के प्रकार के अनुसार अलग हैं: सरकारी salaried >₹1 लाख शुद्ध/माह, गैर-सरकारी salaried >₹1.5 लाख शुद्ध/माह, self-employed ITR >₹18 लाख/वर्ष। बैंक नियम बदल सकता है और वही मंज़ूरी तय करता है।"
+      ],
+      "mr": [
+        "ऑफर किंवा waiver लागू नसल्यास जॉइनिंग आणि renewal fee ₹2,500 + कर आहे.",
+        "Lounge visits, vouchers, welcome benefits आणि reward value साठी पात्रतेच्या अटी आहेत आणि त्या बदलू शकतात.",
+        "हे शुल्क असलेले कार्ड आहे; प्रत्यक्ष वापरणार असलेल्या लाभांची शुल्काशी तुलना करा.",
+        "प्रकाशित उत्पन्न निकष नोकरीच्या प्रकारानुसार वेगळे आहेत: सरकारी salaried >₹1 लाख निव्वळ/महिना, खासगी salaried >₹1.5 लाख निव्वळ/महिना, self-employed ITR >₹18 लाख/वर्ष. बँक निकष बदलू शकते आणि मंजुरी बँक ठरवते."
+      ]
+    },
+    "eligibility": {
+      "en": "HDFC currently lists salaried age 21–60, net monthly income above ₹1 lakh for government employees and above ₹1.5 lakh for non-government employees; self-employed applicants are listed with ITR above ₹18 lakh/year. Check the live issuer criteria; approval is at the bank's discretion.",
+      "hi": "HDFC की मौजूदा जानकारी में salaried सरकारी कर्मचारियों के लिए उम्र 21–60 और शुद्ध मासिक आय ₹1 लाख से अधिक, गैर-सरकारी salaried कर्मचारियों के लिए ₹1.5 लाख से अधिक, तथा self-employed के लिए ITR ₹18 लाख/वर्ष से अधिक सूचीबद्ध है। वर्तमान नियम देखें; मंज़ूरी बैंक तय करता है।",
+      "mr": "HDFC च्या सध्याच्या माहितीनुसार salaried सरकारी कर्मचाऱ्यांसाठी वय 21–60 व निव्वळ मासिक उत्पन्न ₹1 लाखांपेक्षा जास्त, खासगी क्षेत्रातील salaried कर्मचाऱ्यांसाठी ₹1.5 लाखांपेक्षा जास्त, आणि self-employed साठी ITR ₹18 लाख/वर्षापेक्षा जास्त नमूद आहे. सध्याचे निकष तपासा; मंजुरी बँक ठरवते."
+    },
+    "source_url": "https://www.hdfc.bank.in/credit-cards/regalia-gold-credit-card",
+    "fees_url": "https://www.hdfc.bank.in/credit-cards/regalia-gold-credit-card/fees-and-charges",
+    "verified_on": "2026-10-21",
+    "data_status": "official_source_checked_reverify_before_apply",
+    "note": "Official HDFC Bank product/fee pages checked 2026-10-21. Published eligibility differs by employment category; verify current criteria, fees, and lounge rules before applying.",
+    "minimum_monthly_income_salaried": 100000,
+    "minimum_annual_income_self_employed": 1800000,
+    "minimum_age": 21,
+    "maximum_age_salaried": 60,
+    "maximum_age_self_employed": 65
+  },
+  {
+    "id": "bpcl-sbi-octane",
+    "name": "BPCL SBI Card OCTANE",
+    "issuer": "SBI Card",
+    "category": "fuel_savings",
+    "card_network": "Check current variant with issuer",
+    "annual_fee": 1499,
+    "fee_waiver_spend": 200000,
+    "minimum_fd": null,
+    "fd_backed": false,
+    "goal_tags": [
+      "fuel_savings",
+      "rewards"
+    ],
+    "benefits": {
+      "en": [
+        "The issuer lists 25 reward points per ₹100 on eligible BPCL fuel, lubricants and Bharat Gas website/app purchases.",
+        "The issuer lists a redemption ratio of 4 reward points = ₹1, subject to programme rules.",
+        "Renewal fee reversal is listed when prior-year eligible annual spend reaches ₹2 lakh."
+      ],
+      "hi": [
+        "बैंक पात्र BPCL fuel, lubricants और Bharat Gas वेबसाइट/ऐप खरीद पर ₹100 पर 25 reward points बताता है।",
+        "कार्यक्रम की शर्तों के अनुसार 4 reward points = ₹1 की redemption दर सूचीबद्ध है।",
+        "पिछले वर्ष का पात्र सालाना खर्च ₹2 लाख होने पर renewal fee reversal सूचीबद्ध है।"
+      ],
+      "mr": [
+        "बँक पात्र BPCL fuel, lubricants आणि Bharat Gas वेबसाइट/ॲप खरेदीवर ₹100 मागे 25 reward points सांगते.",
+        "कार्यक्रमाच्या अटींनुसार 4 reward points = ₹1 redemption दर नमूद आहे.",
+        "मागील वर्षाचा पात्र वार्षिक खर्च ₹2 लाख झाल्यास renewal fee reversal नमूद आहे."
+      ]
+    },
+    "risks": {
+      "en": [
+        "Joining and annual fee are listed at ₹1,499 plus taxes unless a reversal/offer applies.",
+        "The fuel reward is specifically tied to eligible BPCL spend; non-BPCL fuel may be excluded.",
+        "Reward points have redemption rules and are not the same as instant cash discount.",
+        "This is a weak fit if you rarely fuel at BPCL or cannot use the benefits to offset the fee."
+      ],
+      "hi": [
+        "Fee reversal या ऑफ़र न हो तो जॉइनिंग और वार्षिक फीस ₹1,499 + टैक्स है।",
+        "Fuel reward पात्र BPCL खर्च से जुड़ा है; दूसरे ब्रांड के fuel पर लाभ नहीं मिल सकता।",
+        "Reward points पर redemption नियम हैं; वे तुरंत मिलने वाली नकद छूट जैसे नहीं हैं।",
+        "अगर आप BPCL पर कम fuel भरवाते हैं या लाभ से फीस की भरपाई नहीं होती, तो यह कम उपयोगी है।"
+      ],
+      "mr": [
+        "Fee reversal किंवा ऑफर लागू नसल्यास जॉइनिंग आणि वार्षिक शुल्क ₹1,499 + कर आहे.",
+        "Fuel reward पात्र BPCL खर्चापुरता आहे; इतर ब्रँडच्या fuel वर लाभ मिळेलच असे नाही.",
+        "Reward points साठी redemption नियम आहेत; ते तात्काळ रोख सवलतीसारखे नाहीत.",
+        "तुम्ही BPCL वर कमी fuel भरत असल्यास किंवा लाभातून शुल्क वसूल होत नसल्यास हे कार्ड कमी उपयोगी ठरू शकते."
+      ]
+    },
+    "eligibility": {
+      "en": "Eligibility, age, income and location requirements depend on SBI Card's current rules and application verification. This app cannot determine approval.",
+      "hi": "पात्रता, उम्र, आय और स्थान की शर्तें SBI Card के वर्तमान नियमों और आवेदन verification पर निर्भर हैं। यह ऐप मंज़ूरी नहीं बता सकता।",
+      "mr": "पात्रता, वय, उत्पन्न आणि ठिकाणाचे निकष SBI Card च्या सध्याच्या नियमांवर व अर्ज पडताळणीवर अवलंबून आहेत. हे ॲप मंजुरी ठरवू शकत नाही."
+    },
+    "source_url": "https://www.sbicard.com/en/personal/credit-cards/bpcl-sbi-card-octane.html",
+    "fees_url": "https://www.sbicard.com/en/personal/credit-cards/bpcl-sbi-card-octane.html",
+    "verified_on": "2026-10-21",
+    "data_status": "official_source_checked_reverify_before_apply",
+    "note": "Official SBI Card product page checked 2026-10-21. BPCL reward category and redemption conditions matter; verify current terms before applying."
+  }
+]

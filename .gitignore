@@ -1,33 +1,47 @@
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# Secrets and local environment files
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# Python runtime/cache
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+backend/cache/
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+# Node dependencies / generated files
+node_modules/
+**/node_modules/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+# Databases and generated evaluation
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+training/evaluation_outputs.jsonl
 
-### VS Code ###
+# Locally trained adapter weights; deliberately share separately if needed.
+models/
+
+# Local Drunix network credentials and generated ledger material
+organizations/
+channel-artifacts/
+system-genesis-block/
+*.block
+*.tx
+
+# OS/editor files
+.DS_Store
 .vscode/
+.idea/

@@ -1,0 +1,15 @@
+{
+  "name": "cardsaathi-drunix-gateway",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.13.4",
+    "@hyperledger/fabric-gateway": "^1.7.1",
+    "express": "^5.1.0",
+    "dotenv": "^16.4.7"
+  }
+}
