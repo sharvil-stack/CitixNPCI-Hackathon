@@ -1,0 +1,9 @@
+# Recommended to run in Google Colab with a CUDA GPU (T4 or better)
+transformers>=4.56,<5
+datasets>=3.2
+trl>=0.24,<1
+peft>=0.14
+accelerate>=1.2
+bitsandbytes>=0.45
+safetensors>=0.4
+torch>=2.4
