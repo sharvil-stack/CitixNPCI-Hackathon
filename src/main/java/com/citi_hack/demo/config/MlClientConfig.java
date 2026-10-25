@@ -19,6 +19,7 @@ public class MlClientConfig {
             @Value("${ml.service.read-timeout-seconds:60}") int readSeconds) {
 
         HttpClient httpClient = HttpClient.newBuilder()
+                .version(HttpClient.Version.HTTP_1_1)
                 .connectTimeout(Duration.ofSeconds(connectSeconds))
                 .build();
 
