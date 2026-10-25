@@ -1,0 +1,10 @@
+streamlit
+scikit-learn==1.7.2
+pandas
+numpy
+joblib
+easyocr
+Pillow
+fastapi
+uvicorn
+python-multipart

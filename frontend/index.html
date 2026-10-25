@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#12675d">
+  <title>CardSaathi — Credit, explained simply</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-mark" aria-hidden="true">₹</div>
+    <div class="brand-copy"><h1>CardSaathi</h1><p data-t="tagline">Your friendly credit-card companion</p></div>
+    <div class="top-actions">
+      <label class="lang-label" for="language" data-t="language">Language</label>
+      <select id="language" aria-label="Language"><option value="en">English</option><option value="hi">हिन्दी</option><option value="mr">मराठी</option></select>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="welcome-panel">
+      <div class="welcome-copy">
+        <p class="eyebrow" data-t="eyebrow">CREDIT, EXPLAINED SIMPLY</p>
+        <h2 data-t="headline">No confusing jargon. No judgement. Just clear next steps.</h2>
+        <p data-t="subhead">Learn about cards, compare options, understand your bill and keep yourself safe — in English, Hindi or Marathi.</p>
+      </div>
+      <div class="welcome-art" aria-hidden="true"><div class="art-card"><span>CardSaathi</span><div class="art-chip"></div><div class="art-line"></div><div class="art-line short"></div><div class="art-rup">₹</div></div><div class="art-orbit"></div></div>
+    </section>
+
+    <section class="safety-strip" role="note">
+      <div class="safety-icon">!</div>
+      <div><strong data-t="safetyTitle">Two rules to always remember</strong><p data-t="safetyLine">Never share your OTP, CVV or PIN. Paying only the minimum due can make debt last longer and cost more.</p></div>
+    </section>
+
+    <nav class="tabs" aria-label="Main navigation">
+      <button class="tab active" data-tab="assistant"><span>✳</span><span data-t="tabAssistant">AI assistant</span></button>
+      <button class="tab" data-tab="finder"><span>⌕</span><span data-t="tabFinder">Find my path</span></button>
+      <button class="tab" data-tab="learn"><span>▤</span><span data-t="tabLearn">Learn & verify</span></button>
+    </nav>
+
+    <section id="panel-assistant" class="panel active">
+      <div class="section-heading"><div><p class="eyebrow" data-t="assistantEyebrow">YOUR PERSONAL GUIDE</p><h2 data-t="assistantTitle">Ask CardSaathi anything</h2><p data-t="assistantDesc">Ask one question at a time. I'll explain it simply and help you choose the next step.</p></div><span id="aiStatus" class="status-pill">Checking AI…</span></div>
+      <div class="chat-layout">
+        <div class="chat-main">
+          <div id="chatLog" class="chat-log" aria-live="polite"></div>
+          <div class="chat-controls">
+            <div class="speech-options"><label class="toggle"><input id="readAloud" type="checkbox"><span data-t="readAloud">Automatically read new answers aloud</span></label><button id="stopSpeechButton" class="text-action stop-audio" type="button" data-t="stop" hidden>■ Stop audio</button></div>
+            <div class="composer"><button id="micButton" class="icon-button" type="button" title="Speak your question" aria-label="Speak your question">🎙</button><input id="question" type="text" autocomplete="off" data-t-placeholder="askPlaceholder" placeholder="Ask about credit cards…"><button id="sendButton" class="primary-button" type="button" data-t="send">Send</button></div>
+            <p id="chatStatus" class="small-status" aria-live="polite"></p>
+          </div>
+        </div>
+        <aside class="quick-panel"><h3 data-t="tryAsking">Try asking</h3><button class="prompt-chip" data-question="fd">I have no income or credit history</button><button class="prompt-chip" data-question="upi">Can I use a RuPay credit card on UPI?</button><button class="prompt-chip" data-question="minimum">What is minimum due?</button><button class="prompt-chip" data-question="glossary">Explain credit-card words simply</button><button class="prompt-chip" data-question="existing">Help me review my current card</button><button class="prompt-chip" data-question="scam">How do I spot a credit-card scam?</button><p class="side-note" data-t="privacyNote">Never enter card numbers, CVV, PIN, OTP, passwords or identity numbers.</p></aside>
+      </div>
+    </section>
+
+    <section id="panel-finder" class="panel">
+      <div class="section-heading"><div><p class="eyebrow" data-t="finderEyebrow">A STARTING POINT, NOT AN APPROVAL DECISION</p><h2 data-t="finderTitle">Find your next step</h2><p data-t="finderDesc">Tell us a little about your situation. You can leave anything blank that you do not know.</p></div></div>
+      <div id="ledgerStatus" class="ledger-status" role="status" aria-live="polite" data-mode="checking">Checking workflow ledger…</div>
+      <div class="finder-grid">
+        <form id="finderForm" class="form-card">
+          <div class="finder-voice-box">
+            <div><strong data-t="voiceFillTitle">Prefer speaking?</strong><p data-t="voiceFillHint">Tell CardSaathi your situation and goal in Hindi, Marathi or English. It will fill the form for you.</p></div>
+            <button id="finderMicButton" class="secondary-button" type="button" data-t="voiceFillButton">🎙 Speak to fill form</button>
+            <p id="finderVoiceStatus" class="small-status" aria-live="polite"></p><p id="finderVoiceTranscript" class="voice-transcript"></p>
+          </div>
+          <label for="userType" data-t="userType">Which describes you?</label><select id="userType"><option value="new" data-t="newUser">I'm new to credit cards</option><option value="existing" data-t="existingUser">I already have a card</option></select>
+          <div class="form-row"><div><label for="age" data-t="age">Age</label><input id="age" type="number" min="0" max="120" placeholder="Optional"></div><div><label for="income" data-t="income">Monthly income (₹)</label><input id="income" type="number" min="0" placeholder="Optional"></div></div>
+          <label for="employment" data-t="employment">Current situation</label><select id="employment"><option value="unsure" data-t="preferNot">Prefer not to say</option><option value="student" data-t="student">Student</option><option value="salaried" data-t="salaried">Salaried</option><option value="self-employed" data-t="selfEmployed">Self-employed</option><option value="other" data-t="other">Other / no income</option></select>
+          <label for="creditHistory" data-t="creditHistory">Credit history</label><select id="creditHistory"><option value="unsure" data-t="historyUnsure">Not sure</option><option value="none" data-t="historyNone">No credit history / no score</option><option value="limited" data-t="historyLimited">Limited history</option><option value="established" data-t="historyEstablished">I have a credit history</option></select>
+          <label for="primaryGoal" data-t="primaryGoal">What matters most to you?</label><select id="primaryGoal"><option value="build_history" data-t="goalBuildHistory">Build credit history</option><option value="cashback" data-t="goalCashback">Cashback on regular spending</option><option value="online_shopping" data-t="goalOnline">Online shopping rewards</option><option value="upi_payments" data-t="goalUPI">Credit card on UPI for merchant payments</option><option value="travel" data-t="goalTravel">Travel and foreign-currency spending</option><option value="fuel_savings" data-t="goalFuel">Fuel-related savings</option><option value="low_fees" data-t="goalLowFees">Keep card fees low</option><option value="learn_manage" data-t="goalManage">Understand/manage my current card</option><option value="debt_safety" data-t="goalDebt">Manage repayments / avoid debt trouble</option><option value="bill_payments" data-t="goalBills">Cashback on utility / telecom bills</option></select>
+          <label for="paymentCapacity" data-t="paymentCapacity">Could you comfortably pay the full bill by the due date?</label><select id="paymentCapacity"><option value="unsure" data-t="paymentUnsure">Not sure yet</option><option value="yes" data-t="paymentYes">Yes, for normal planned spending</option><option value="no" data-t="paymentNo">No / I currently pay only the minimum</option></select>
+          <label for="usesUPI" data-t="usesUPI">Do you use UPI regularly?</label><select id="usesUPI"><option value="unsure" data-t="upiUnsure">Not sure / skip</option><option value="true" data-t="upiYes">Yes</option><option value="false" data-t="upiNo">No</option></select>
+          <label class="check-row"><input id="fdAvailable" type="checkbox"><span data-t="fdAvailable">I could consider a fixed deposit (FD)</span></label>
+          <label for="fdAmount" data-t="fdAmount">Amount I could comfortably set aside in an FD (₹, optional)</label><input id="fdAmount" type="number" min="0" placeholder="Optional">
+          <label for="onlineSpend" data-t="onlineSpend">Online shopping / bills each month (₹)</label><input id="onlineSpend" type="number" min="0" placeholder="Optional">
+          <div class="form-row"><div><label for="offlineSpend" data-t="offlineSpend">In-store spending / month (₹)</label><input id="offlineSpend" type="number" min="0" placeholder="Optional"></div><div><label for="fuelSpend" data-t="fuelSpend">Fuel / month (₹)</label><input id="fuelSpend" type="number" min="0" placeholder="Optional"></div></div>
+          <button class="primary-button full-button" type="submit" data-t="compare">Show my possible paths</button>
+          <p class="form-footnote" data-t="formDisclaimer">This estimates a route to explore. It cannot verify eligibility or predict approval.</p>
+        </form>
+        <div id="finderResults" class="result-column"><div class="empty-state"><span>✦</span><h3 data-t="resultsEmptyTitle">Your results will appear here</h3><p data-t="resultsEmptyText">We will suggest a learning path and show illustrative card comparisons where available.</p></div></div>
+      </div>
+    </section>
+
+    <section id="panel-learn" class="panel">
+      <div class="section-heading"><div><p class="eyebrow" data-t="learnEyebrow">LEARN AT YOUR OWN PACE</p><h2 data-t="learnTitle">Understand before you apply</h2><p data-t="learnDesc">Short lessons and trusted links. Product-specific terms should always be checked with the issuer.</p></div></div>
+      <section class="catalogue-block" aria-labelledby="catalogTitle">
+        <div class="section-heading compact"><div><h2 data-t="catalogTitle" id="catalogTitle">Browse the card catalogue</h2><p data-t="catalogDesc">A limited sample across different use cases. Product terms must be reconfirmed with issuers.</p></div></div>
+        <label class="catalog-search-label" for="cardSearch" data-t="searchCardsLabel">Search cards</label>
+        <input id="cardSearch" class="catalog-search" type="search" data-t-placeholder="searchCards" placeholder="Search by card or bank name…">
+        <p id="catalogueCount" class="small-muted catalogue-count" aria-live="polite"></p>
+        <div class="resource-grid" id="cardCatalogGrid"></div>
+      </section>
+      <div class="lesson-grid" id="lessonGrid"></div>
+      <div class="glossary-block"><div class="section-heading compact"><div><h2 data-t="glossaryTitle">Credit-card words, in plain language</h2><p data-t="glossaryDesc">Tap a term to ask the assistant for an example.</p></div></div><div id="glossaryGrid" class="glossary-grid"></div></div>
+      <div class="resources-block"><div class="section-heading compact"><div><h2 data-t="resourcesTitle">Go deeper with trusted sources</h2><p data-t="resourcesDesc">These are learning links, not endorsements. For the current fee and eligibility rules, use the card issuer's official page.</p></div></div><div id="resourceGrid" class="resource-grid"></div></div>
+    </section>
+
+    <footer><p data-t="footer">CardSaathi is an educational prototype, not a bank, lender or credit bureau. Card terms change; confirm every important detail with the official issuer.</p><p class="footer-links"><a href="https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12300" target="_blank" rel="noopener noreferrer">RBI credit-card directions</a> · <a href="https://www.npci.org.in/product/rupay/credit-card-on-upi" target="_blank" rel="noopener noreferrer">NPCI RuPay on UPI</a></p></footer>
+  </main>
+  <script src="/static/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+# Optional local inference only, after adapter training. A full PyTorch install is large.
+# Install a PyTorch build that matches your OS/Python before using this file.
+torch>=2.4
+transformers>=4.56,<5
+peft>=0.14
+accelerate>=1.2
+safetensors>=0.4
