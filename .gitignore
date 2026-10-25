@@ -39,3 +39,14 @@ backend/cache/
 target/
 .idea/
 HELP.md
+# Spring Boot H2 user database
+/data/
+
+
+# Finora React/Vite frontend
+finora-app/node_modules/
+finora-app/dist/
+finora-app/.env
+
+# Runtime logs
+*.log
