@@ -1,0 +1,161 @@
+{
+  "version": "1.0",
+  "warning": "TEST DATA ONLY. Keys were generated for this file and discarded. Never use in production.",
+  "rules": "See contracts/README.md. Check order: certificate, expiry, signature, counter, prevHash, limits.",
+  "issuerPublicKeySpkiB64": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEat98a5nsj4C0OnWL5BVleggw8IOoEQRgf7PaqFSa/K5BmFCR4k8oyVtfp+Hu74tEQl3ldeI8Ala01JC8WKfldA==",
+  "devicePublicKeySpkiB64": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEc7im2o6iSrwHZfXL6Kh4YoAriwlIXn3jZBGQj5AWcxShZXxgIFTCSjKVUsM/XfYnagZHWmBIP+qA6FxhARUM8g==",
+  "certificate": {
+    "allowanceId": "alw_TEST000001",
+    "deviceKeyHash": "d482fad71bfd3190387f6951ce588721fe602441459f05cc18c23bd8f0f22730",
+    "ceilingPaise": 500000,
+    "perTxCapPaise": 100000,
+    "expiry": 1800489600,
+    "trustTier": "TIER_1",
+    "issuerId": "iss_sim_bank",
+    "issuerSignature": "MEUCIQCNv2KvoamiI4mGEFgn3w+5YnPI/QtZ+xVD59B+Z2W+lQIgQfzMtM1ZWTpsJabNAtCMWvtvfwEalXvU/lsTIzi+nOA="
+  },
+  "priorReceipts": [
+    {
+      "allowanceId": "alw_TEST000001",
+      "counter": 1,
+      "amountPaise": 25000,
+      "payeeId": "mrc_4421",
+      "nonce": "89c1a0b15a0744898a244300f433bf90",
+      "ts": 1797897660,
+      "prevHash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "sig": "MEQCIGfrykXhG+zMA39t5rfJvo1omPp+rBK+G4JwlPr4wSyaAiAQ2Ji19CIFYw3jY3Z978zmea5b1ED/W6PIuoR5ICAmpg=="
+    }
+  ],
+  "vectors": [
+    {
+      "id": "valid",
+      "description": "Correct next receipt: counter 2, chained to receipt 1, good signature.",
+      "receipt": {
+        "allowanceId": "alw_TEST000001",
+        "counter": 2,
+        "amountPaise": 15000,
+        "payeeId": "mrc_4421",
+        "nonce": "f9ab90d2b08fe43a4418b930853822bd",
+        "ts": 1797897720,
+        "prevHash": "e350e2cf10e427d824db346a3c7333b27721762182761ba7ee169d2d1a04b3eb",
+        "sig": "MEQCIEE2EgxIkBnil1/bXftvM3mfok8gZVfrg1ZN5qo2kR4TAiBVeYWjZy60YQ/YqKN6JVsA70avmVivbFmIa/exjv4j8w=="
+      },
+      "canonicalJson": "{\"allowanceId\":\"alw_TEST000001\",\"amountPaise\":15000,\"counter\":2,\"nonce\":\"f9ab90d2b08fe43a4418b930853822bd\",\"payeeId\":\"mrc_4421\",\"prevHash\":\"e350e2cf10e427d824db346a3c7333b27721762182761ba7ee169d2d1a04b3eb\",\"ts\":1797897720}",
+      "digestSha256Hex": "8bc09979c533bde677ee658be77ab9041eb0ae6ff413463ab2503324628857e7",
+      "context": {
+        "nowTs": 1797901200,
+        "lastAcceptedCounter": 1,
+        "lastAcceptedDigest": "e350e2cf10e427d824db346a3c7333b27721762182761ba7ee169d2d1a04b3eb",
+        "spentSoFarPaise": 25000
+      },
+      "expected": {
+        "valid": true,
+        "code": "OK"
+      }
+    },
+    {
+      "id": "bad-signature",
+      "description": "Amount was changed after signing, so the signature no longer matches.",
+      "receipt": {
+        "allowanceId": "alw_TEST000001",
+        "counter": 2,
+        "amountPaise": 95000,
+        "payeeId": "mrc_4421",
+        "nonce": "db2fa5199a273bf286cc7b562d2e31ed",
+        "ts": 1797897720,
+        "prevHash": "e350e2cf10e427d824db346a3c7333b27721762182761ba7ee169d2d1a04b3eb",
+        "sig": "MEUCIER604qccr6ArVUD9gsl8H8geu8G32F7xrUvIWXOgSz2AiEA/W5wOGHRig5P+GXxoqTu2j2LB12E1KmjQ6GHIhYK/ZI="
+      },
+      "canonicalJson": "{\"allowanceId\":\"alw_TEST000001\",\"amountPaise\":95000,\"counter\":2,\"nonce\":\"db2fa5199a273bf286cc7b562d2e31ed\",\"payeeId\":\"mrc_4421\",\"prevHash\":\"e350e2cf10e427d824db346a3c7333b27721762182761ba7ee169d2d1a04b3eb\",\"ts\":1797897720}",
+      "digestSha256Hex": "72dc04f55b7edb35e8267826334d3a6a9c614d51c29cc51300a94c885ebf1086",
+      "context": {
+        "nowTs": 1797901200,
+        "lastAcceptedCounter": 1,
+        "lastAcceptedDigest": "e350e2cf10e427d824db346a3c7333b27721762182761ba7ee169d2d1a04b3eb",
+        "spentSoFarPaise": 25000
+      },
+      "expected": {
+        "valid": false,
+        "code": "BAD_SIGNATURE"
+      }
+    },
+    {
+      "id": "counter-gap",
+      "description": "Counter jumps from 1 to 4. Counters 2 and 3 are missing.",
+      "receipt": {
+        "allowanceId": "alw_TEST000001",
+        "counter": 4,
+        "amountPaise": 10000,
+        "payeeId": "mrc_4421",
+        "nonce": "a34f7f8d24c8b08dcae810103950f61c",
+        "ts": 1797897840,
+        "prevHash": "e350e2cf10e427d824db346a3c7333b27721762182761ba7ee169d2d1a04b3eb",
+        "sig": "MEUCIQCYoTxbb8O/RTTDJK9Sp0W40yqOwnmnjJqRTLbnTZInxQIgNla1VSIGAYHBGrGAazPPqsOXl+AZxlj3d2K99u9BfLY="
+      },
+      "canonicalJson": "{\"allowanceId\":\"alw_TEST000001\",\"amountPaise\":10000,\"counter\":4,\"nonce\":\"a34f7f8d24c8b08dcae810103950f61c\",\"payeeId\":\"mrc_4421\",\"prevHash\":\"e350e2cf10e427d824db346a3c7333b27721762182761ba7ee169d2d1a04b3eb\",\"ts\":1797897840}",
+      "digestSha256Hex": "9ee908d05d9db79dfb5fd338378647433b6c1ed9ffc2e51ac56230240ef15e01",
+      "context": {
+        "nowTs": 1797901200,
+        "lastAcceptedCounter": 1,
+        "lastAcceptedDigest": "e350e2cf10e427d824db346a3c7333b27721762182761ba7ee169d2d1a04b3eb",
+        "spentSoFarPaise": 25000
+      },
+      "expected": {
+        "valid": false,
+        "code": "COUNTER_GAP"
+      }
+    },
+    {
+      "id": "duplicate-counter",
+      "description": "Counter 1 is already used by receipt 1 (different payee). Double-spend attempt.",
+      "receipt": {
+        "allowanceId": "alw_TEST000001",
+        "counter": 1,
+        "amountPaise": 25000,
+        "payeeId": "mrc_9908",
+        "nonce": "35be24879861cc0d220b8a897dc3a3d1",
+        "ts": 1797897690,
+        "prevHash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "sig": "MEYCIQDJxzNCM9zK2I8B7TH1PCRHGNSqmyu0LEZBIQKSPkMHlQIhAK6MjnyQc/CfrECjKhGNa1xBiwYS6PxpfDYS7rrdcoP4"
+      },
+      "canonicalJson": "{\"allowanceId\":\"alw_TEST000001\",\"amountPaise\":25000,\"counter\":1,\"nonce\":\"35be24879861cc0d220b8a897dc3a3d1\",\"payeeId\":\"mrc_9908\",\"prevHash\":\"0000000000000000000000000000000000000000000000000000000000000000\",\"ts\":1797897690}",
+      "digestSha256Hex": "ceaebc9beabb1ffbbc123a44fc2e69a4f68432f5ce81f691a17df850cc6561d3",
+      "context": {
+        "nowTs": 1797901200,
+        "lastAcceptedCounter": 1,
+        "lastAcceptedDigest": "e350e2cf10e427d824db346a3c7333b27721762182761ba7ee169d2d1a04b3eb",
+        "spentSoFarPaise": 25000
+      },
+      "expected": {
+        "valid": false,
+        "code": "DUPLICATE_COUNTER"
+      }
+    },
+    {
+      "id": "expired-allowance",
+      "description": "Signature is good, but the receipt time is after the allowance expiry.",
+      "receipt": {
+        "allowanceId": "alw_TEST000001",
+        "counter": 2,
+        "amountPaise": 15000,
+        "payeeId": "mrc_4421",
+        "nonce": "be156304a148c61a784e117ad55871ea",
+        "ts": 1800489660,
+        "prevHash": "e350e2cf10e427d824db346a3c7333b27721762182761ba7ee169d2d1a04b3eb",
+        "sig": "MEUCIHFR5MejXkylH/KLUTDtdavxCtX+4xpY7UON8xgRLfj4AiEA3Y7tA+6xgS+88gtD4eppL0XPb5nd6tP7Nxvc5YlhicU="
+      },
+      "canonicalJson": "{\"allowanceId\":\"alw_TEST000001\",\"amountPaise\":15000,\"counter\":2,\"nonce\":\"be156304a148c61a784e117ad55871ea\",\"payeeId\":\"mrc_4421\",\"prevHash\":\"e350e2cf10e427d824db346a3c7333b27721762182761ba7ee169d2d1a04b3eb\",\"ts\":1800489660}",
+      "digestSha256Hex": "dde4f1a1c340a4420d641afa2b9c6c07ecbc504f3b7a68cd571b4dc5f0a6f11a",
+      "context": {
+        "nowTs": 1800489720,
+        "lastAcceptedCounter": 1,
+        "lastAcceptedDigest": "e350e2cf10e427d824db346a3c7333b27721762182761ba7ee169d2d1a04b3eb",
+        "spentSoFarPaise": 25000
+      },
+      "expected": {
+        "valid": false,
+        "code": "ALLOWANCE_EXPIRED"
+      }
+    }
+  ]
+}

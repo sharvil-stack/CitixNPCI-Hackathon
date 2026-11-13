@@ -1,0 +1,375 @@
+openapi: 3.1.0
+info:
+  title: Finora Backend API
+  version: "1.0.0"
+  description: |
+    Contract between the Flutter wallet, the Finora backend, the regulator UI and the
+    Finora Mitra agent. Money is integer paise. Timestamps are Unix seconds (UTC).
+    Bank, UPI and IMPS parts are SIMULATED and every response that touches them says so.
+    The ledger runs on a local Hyperledger Fabric test network, not on Drunix.
+    userRef is an opaque Finora id, never a phone number, Aadhaar or UPI id.
+servers:
+  - url: http://localhost:8090
+    description: Local development (finora-backend)
+  - url: http://localhost:4010
+    description: Mock server (/mock-server)
+
+paths:
+  /allowances/issue:
+    post:
+      summary: Load an allowance while online and receive the signed certificate
+      operationId: issueAllowance
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: false
+              required: [userRef, deviceKeyHash, devicePublicKeySpkiB64, requestedCeilingPaise]
+              properties:
+                userRef: { type: string, pattern: "^[A-Za-z0-9_-]{4,64}$" }
+                deviceKeyHash: { type: string, pattern: "^[0-9a-f]{64}$" }
+                devicePublicKeySpkiB64:
+                  type: string
+                  description: DER SubjectPublicKeyInfo of the device public key, standard base64.
+                requestedCeilingPaise: { type: integer, minimum: 1 }
+            example:
+              userRef: usr_82hd7a
+              deviceKeyHash: "9f2c4b7a1d0e8c3b5a6f7e8d9c0b1a2f3e4d5c6b7a8f9e0d1c2b3a4f5e6d7c8b"
+              devicePublicKeySpkiB64: "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE...(shortened)"
+              requestedCeilingPaise: 300000
+      responses:
+        "200":
+          description: Allowance issued. Funds are held in simulated escrow.
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [certificate, revocationSnapshot, escrowHeldPaise, simulated]
+                properties:
+                  certificate: { $ref: "./allowance-cert.schema.json#/$defs/AllowanceCertificate" }
+                  revocationSnapshot: { $ref: "./allowance-cert.schema.json#/$defs/RevocationSnapshot" }
+                  escrowHeldPaise: { type: integer }
+                  simulated: { type: boolean, description: "Always true while rails are simulated." }
+              example:
+                certificate:
+                  allowanceId: alw_7Kd92Lq0Xa
+                  deviceKeyHash: "9f2c4b7a1d0e8c3b5a6f7e8d9c0b1a2f3e4d5c6b7a8f9e0d1c2b3a4f5e6d7c8b"
+                  ceilingPaise: 300000
+                  perTxCapPaise: 100000
+                  expiry: 1800489600
+                  trustTier: TIER_1
+                  issuerId: iss_sim_bank
+                  issuerSignature: "MEUCIQDexample...(shortened)"
+                revocationSnapshot:
+                  epoch: 12
+                  merkleRoot: "ab12cd34ef56ab12cd34ef56ab12cd34ef56ab12cd34ef56ab12cd34ef56ab12"
+                  issuedAt: 1797897600
+                  signature: "MEQCIFexample...(shortened)"
+                escrowHeldPaise: 300000
+                simulated: true
+        "400": { $ref: "#/components/responses/Error" }
+        "409":
+          description: Ceiling above the allowed cap for this trust tier, or an active allowance already exists.
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Error" }
+              example: { code: CEILING_TOO_HIGH, message: "Requested ceiling exceeds the cap for TIER_1 (500000 paise)." }
+
+  /receipts/sync:
+    post:
+      summary: Upload offline receipts for settlement once internet is back
+      operationId: syncReceipts
+      description: |
+        Called by a merchant app (or a payer app). Each receipt is claimed on the ledger under
+        (allowanceId, counter); a second claim of the same key fails. Settlement moves money
+        over SIMULATED rails.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: false
+              required: [merchantId, receipts]
+              properties:
+                merchantId: { type: string }
+                receipts:
+                  type: array
+                  minItems: 1
+                  maxItems: 200
+                  items: { $ref: "./receipt.schema.json" }
+            example:
+              merchantId: mrc_4421
+              receipts:
+                - allowanceId: alw_7Kd92Lq0Xa
+                  counter: 2
+                  amountPaise: 15000
+                  payeeId: mrc_4421
+                  nonce: f9ab90d2b08fe43a4418b930853822bd
+                  ts: 1797897720
+                  prevHash: e350e2cf10e427d824db346a3c7333b27721762182761ba7ee169d2d1a04b3eb
+                  sig: "MEUCIQDexample...(shortened)"
+      responses:
+        "200":
+          description: One result per receipt, in the same order as the request.
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [results, simulated]
+                properties:
+                  results:
+                    type: array
+                    items:
+                      type: object
+                      required: [allowanceId, counter, status]
+                      properties:
+                        allowanceId: { type: string }
+                        counter: { type: integer }
+                        status:
+                          type: string
+                          enum: [SETTLED, ALREADY_SETTLED, REJECTED, COVERED_BY_GUARANTEE_POOL]
+                        reason:
+                          type: string
+                          description: Present when status is not SETTLED. Uses the result codes in README.md.
+                        ledgerTxId: { type: string }
+                        settledPaise: { type: integer }
+                  simulated: { type: boolean }
+              example:
+                results:
+                  - { allowanceId: alw_7Kd92Lq0Xa, counter: 2, status: SETTLED, ledgerTxId: "tx_5c1e9a", settledPaise: 15000 }
+                simulated: true
+        "400": { $ref: "#/components/responses/Error" }
+
+  /revocations/latest:
+    get:
+      summary: Latest signed revocation snapshot, optionally with a non-revocation proof
+      operationId: latestRevocations
+      parameters:
+        - name: allowanceId
+          in: query
+          required: false
+          schema: { type: string }
+          description: If given and the allowance is NOT revoked, a nonRevocationProof is included.
+      responses:
+        "200":
+          description: Snapshot (and proof when asked for).
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [snapshot]
+                properties:
+                  snapshot: { $ref: "./allowance-cert.schema.json#/$defs/RevocationSnapshot" }
+                  nonRevocationProof: { $ref: "./allowance-cert.schema.json#/$defs/NonRevocationProof" }
+              example:
+                snapshot:
+                  epoch: 13
+                  merkleRoot: "cd34ef56ab12cd34ef56ab12cd34ef56ab12cd34ef56ab12cd34ef56ab12cd34"
+                  issuedAt: 1797901200
+                  signature: "MEQCIFexample...(shortened)"
+        "404":
+          description: allowanceId asked for is unknown, or it is revoked (no proof possible).
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Error" }
+              example: { code: ALLOWANCE_REVOKED, message: "Allowance is revoked; no non-revocation proof exists." }
+
+  /regulator/float:
+    get:
+      summary: Money currently "in the air" (for the regulator dashboard)
+      operationId: regulatorFloat
+      responses:
+        "200":
+          description: Aggregate numbers only. No personal data.
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [asOf, activeAllowances, totalLoadedPaise, escrowHeldPaise, unsettledReceiptsPaise, guaranteePoolPaise, simulated]
+                properties:
+                  asOf: { type: integer }
+                  activeAllowances: { type: integer }
+                  totalLoadedPaise: { type: integer }
+                  escrowHeldPaise: { type: integer }
+                  unsettledReceiptsPaise: { type: integer }
+                  guaranteePoolPaise: { type: integer }
+                  simulated: { type: boolean }
+              example:
+                asOf: 1797901200
+                activeAllowances: 128
+                totalLoadedPaise: 21400000
+                escrowHeldPaise: 19850000
+                unsettledReceiptsPaise: 1550000
+                guaranteePoolPaise: 2000000
+                simulated: true
+
+  /scam-intel:
+    post:
+      summary: Share a hashed scam indicator (Scam Shield)
+      operationId: submitScamIntel
+      description: Only hashes and a category are accepted. Never send the raw phone number, UPI id or message text.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: false
+              required: [category, indicatorType, indicatorHash, reportedAt]
+              properties:
+                category: { type: string, enum: [PHISHING, FAKE_COLLECT_REQUEST, IMPERSONATION, LOTTERY_PRIZE, OTHER] }
+                indicatorType: { type: string, enum: [UPI_ID_HASH, PHONE_HASH, URL_HASH] }
+                indicatorHash: { type: string, pattern: "^[0-9a-f]{64}$" }
+                reportedAt: { type: integer }
+            example:
+              category: FAKE_COLLECT_REQUEST
+              indicatorType: UPI_ID_HASH
+              indicatorHash: "1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b"
+              reportedAt: 1797901200
+      responses:
+        "202":
+          description: Accepted and queued for the ledger.
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [intelId, ledgerStatus]
+                properties:
+                  intelId: { type: string }
+                  ledgerStatus: { type: string, enum: [QUEUED, ANCHORED] }
+              example: { intelId: sci_90ab12, ledgerStatus: QUEUED }
+        "400": { $ref: "#/components/responses/Error" }
+
+  /learning-proofs:
+    post:
+      summary: Record that a user finished a Learn / MoneyMentor module
+      operationId: submitLearningProof
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: false
+              required: [userRef, moduleId, completedAt, scorePercent, proofHash]
+              properties:
+                userRef: { type: string }
+                moduleId: { type: string }
+                completedAt: { type: integer }
+                scorePercent: { type: integer, minimum: 0, maximum: 100 }
+                proofHash: { type: string, pattern: "^[0-9a-f]{64}$" }
+            example:
+              userRef: usr_82hd7a
+              moduleId: upi-safety-101
+              completedAt: 1797901200
+              scorePercent: 80
+              proofHash: "2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c"
+      responses:
+        "201":
+          description: Stored. Only proofHash goes on the ledger.
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [proofId, ledgerStatus]
+                properties:
+                  proofId: { type: string }
+                  ledgerStatus: { type: string, enum: [QUEUED, ANCHORED] }
+              example: { proofId: lrn_55aa01, ledgerStatus: QUEUED }
+        "400": { $ref: "#/components/responses/Error" }
+
+  /scheme-attestations:
+    post:
+      summary: Record a government-scheme eligibility or application outcome (Scheme Finder)
+      operationId: submitSchemeAttestation
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: false
+              required: [userRef, schemeId, status, attestationHash, attestedAt]
+              properties:
+                userRef: { type: string }
+                schemeId: { type: string }
+                status: { type: string, enum: [ELIGIBLE, APPLIED, ENROLLED] }
+                attestationHash: { type: string, pattern: "^[0-9a-f]{64}$" }
+                attestedAt: { type: integer }
+            example:
+              userRef: usr_82hd7a
+              schemeId: pm-kisan
+              status: ELIGIBLE
+              attestationHash: "3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d5e6f1a2b3c4d"
+              attestedAt: 1797901200
+      responses:
+        "201":
+          description: Stored. Only attestationHash goes on the ledger.
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [attestationId, ledgerStatus]
+                properties:
+                  attestationId: { type: string }
+                  ledgerStatus: { type: string, enum: [QUEUED, ANCHORED] }
+              example: { attestationId: sch_71cc09, ledgerStatus: QUEUED }
+        "400": { $ref: "#/components/responses/Error" }
+
+  /trust-tier/{userRef}:
+    get:
+      summary: Current trust tier for a user
+      operationId: getTrustTier
+      parameters:
+        - name: userRef
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        "200":
+          description: Tier and the counts it was based on.
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [userRef, trustTier, updatedAt, basedOn]
+                properties:
+                  userRef: { type: string }
+                  trustTier: { type: string, enum: [TIER_1, TIER_2, TIER_3] }
+                  updatedAt: { type: integer }
+                  basedOn:
+                    type: object
+                    properties:
+                      learningProofs: { type: integer }
+                      schemeAttestations: { type: integer }
+                      settledReceipts: { type: integer }
+              example:
+                userRef: usr_82hd7a
+                trustTier: TIER_2
+                updatedAt: 1797901200
+                basedOn: { learningProofs: 3, schemeAttestations: 1, settledReceipts: 14 }
+        "404":
+          description: Unknown userRef.
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Error" }
+              example: { code: USER_NOT_FOUND, message: "No such userRef." }
+
+components:
+  schemas:
+    Error:
+      type: object
+      required: [code, message]
+      properties:
+        code: { type: string }
+        message: { type: string }
+  responses:
+    Error:
+      description: Bad request
+      content:
+        application/json:
+          schema: { $ref: "#/components/schemas/Error" }
+          example: { code: VALIDATION_ERROR, message: "amountPaise must be an integer >= 1." }

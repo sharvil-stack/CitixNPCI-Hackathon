@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://finora.example/contracts/receipt.schema.json",
+  "title": "Finora Offline Receipt",
+  "description": "One offline payment receipt, signed by the payer's device key. Money is integer paise. Timestamps are Unix seconds (UTC). Contains no personal data.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["allowanceId", "counter", "amountPaise", "payeeId", "nonce", "ts", "prevHash", "sig"],
+  "properties": {
+    "allowanceId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]{8,64}$",
+      "description": "Id of the allowance certificate this spend draws from. ASCII only.",
+      "examples": ["alw_7Kd92Lq0Xa"]
+    },
+    "counter": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Per-allowance spend counter. Starts at 1 and goes up by exactly 1 per receipt. (allowanceId, counter) is the double-spend key on the ledger."
+    },
+    "amountPaise": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Amount in integer paise (100 paise = Rs 1). Never a float."
+    },
+    "payeeId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]{4,64}$",
+      "description": "Opaque merchant id issued by Finora. Not a phone number or UPI id.",
+      "examples": ["mrc_4421"]
+    },
+    "nonce": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{32}$",
+      "description": "16 random bytes as 32 lowercase hex characters. Makes every receipt unique."
+    },
+    "ts": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Unix seconds (UTC) on the payer's device when the receipt was made."
+    },
+    "prevHash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "description": "Lowercase hex SHA-256 digest of the previous receipt in this allowance (the digest that receipt's sig covers). For counter 1 use 64 zeros."
+    },
+    "sig": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9+/]+={0,2}$",
+      "description": "Standard base64 (with padding) of the DER-encoded ECDSA P-256 signature over SHA-256(canonical JSON of all fields except sig)."
+    }
+  }
+}

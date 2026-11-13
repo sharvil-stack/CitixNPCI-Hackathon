@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://finora.example/contracts/allowance-cert.schema.json",
+  "title": "Finora Allowance Certificate",
+  "description": "Issued by the (simulated) issuer when a user loads an allowance while online. The root of this file is the certificate; the revocation snapshot and the non-revocation proof are in $defs. Money is integer paise, timestamps are Unix seconds (UTC). No personal data.",
+  "$ref": "#/$defs/AllowanceCertificate",
+  "$defs": {
+    "Hex32": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "description": "32 bytes as 64 lowercase hex characters."
+    },
+    "DerSigBase64": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9+/]+={0,2}$",
+      "description": "Standard base64 (with padding) of a DER-encoded ECDSA P-256 signature."
+    },
+    "AllowanceCertificate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["allowanceId", "deviceKeyHash", "ceilingPaise", "perTxCapPaise", "expiry", "trustTier", "issuerId", "issuerSignature"],
+      "properties": {
+        "allowanceId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{8,64}$"
+        },
+        "deviceKeyHash": {
+          "$ref": "#/$defs/Hex32",
+          "description": "SHA-256 of the DER SubjectPublicKeyInfo bytes of the payer's device public key. The payer sends the public key next to the certificate; the payee hashes it and compares."
+        },
+        "ceilingPaise": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Total spendable across the allowance. Default 500000 (Rs 5,000). Configurable."
+        },
+        "perTxCapPaise": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Maximum for one receipt. Default 100000 (Rs 1,000). Configurable. Must be <= ceilingPaise."
+        },
+        "expiry": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Unix seconds (UTC). A receipt whose ts is after this is invalid."
+        },
+        "trustTier": {
+          "type": "string",
+          "enum": ["TIER_1", "TIER_2", "TIER_3"],
+          "description": "Trust tier at issue time. Higher tier can mean higher caps. Informational for the payee."
+        },
+        "issuerId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{4,64}$",
+          "description": "Id of the (simulated) issuer bank / Finora issuer whose key signed this."
+        },
+        "issuerSignature": {
+          "$ref": "#/$defs/DerSigBase64",
+          "description": "Issuer signature using the same rules as receipts: ECDSA P-256 over SHA-256 of the canonical JSON of all fields except issuerSignature."
+        }
+      }
+    },
+    "RevocationSnapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["epoch", "merkleRoot", "issuedAt", "signature"],
+      "properties": {
+        "epoch": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Increases by 1 every time the revoked set changes. A device keeps the highest epoch it has seen and never goes back."
+        },
+        "merkleRoot": {
+          "$ref": "#/$defs/Hex32",
+          "description": "Root of the sorted Merkle tree of revoked allowance ids (see README, 'Revocation snapshot and proofs')."
+        },
+        "issuedAt": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Unix seconds (UTC). Payee apps use the age of the snapshot (now - issuedAt) to reduce the amount they accept: older snapshot, smaller limit."
+        },
+        "signature": {
+          "$ref": "#/$defs/DerSigBase64",
+          "description": "Issuer signature over SHA-256 of the canonical JSON of all fields except signature."
+        }
+      }
+    },
+    "MerklePathNode": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["leafHash", "index", "path"],
+      "properties": {
+        "leafHash": {
+          "$ref": "#/$defs/Hex32",
+          "description": "The leaf value itself (already hashed, or a sentinel), as stored in the tree."
+        },
+        "index": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Zero-based position of this leaf in the sorted, padded leaf list."
+        },
+        "path": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/Hex32" },
+          "description": "Sibling hashes from the leaf level up to just below the root."
+        }
+      }
+    },
+    "NonRevocationProof": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["allowanceId", "epoch", "left", "right"],
+      "description": "Proves allowanceId is NOT in the revoked set of the snapshot with this epoch, by showing two neighbouring leaves with the allowance's leaf value between them.",
+      "properties": {
+        "allowanceId": { "type": "string", "pattern": "^[A-Za-z0-9_-]{8,64}$" },
+        "epoch": { "type": "integer", "minimum": 0 },
+        "left": { "$ref": "#/$defs/MerklePathNode" },
+        "right": { "$ref": "#/$defs/MerklePathNode" }
+      }
+    }
+  }
+}
